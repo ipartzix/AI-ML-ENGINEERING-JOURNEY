@@ -68,3 +68,53 @@ from sklearn.preprocessing import OneHotEncoder
 
 encoder = OneHotEncoder()
 encoded_data = encoder.fit_transform(df[['category']])
+```
+# Pillar 3: Feature Construction 
+
+Feature Construction is the process of creating new meaningful features from existing data to improve model performance.
+
+This is where domain knowledge and analytical thinking significantly impact model accuracy.
+
+---
+
+##  Objective
+
+- Extract hidden patterns
+- Capture relationships between variables
+- Increase model expressiveness
+- Improve predictive power
+
+---
+
+##  Why Feature Construction is Important
+
+Raw data rarely contains the exact signals needed by a model.
+
+Well-constructed features:
+- Reveal non-linear relationships
+- Capture interactions between variables
+- Improve model generalization
+- Reduce bias
+
+Better features → Better predictions.
+
+---
+
+#  Types of Feature Construction
+
+---
+
+## 1️ Mathematical Transformations
+
+Create new features using mathematical operations.
+
+### Examples:
+- Polynomial features (x², x³)
+- Interaction terms (x1 * x2)
+- Ratios (price / quantity)
+
+### Example:
+```python
+df['price_per_item'] = df['total_price'] / df['quantity']
+df['age_squared'] = df['age'] ** 2
+```
