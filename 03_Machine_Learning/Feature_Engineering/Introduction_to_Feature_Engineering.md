@@ -30,7 +30,7 @@ It ensures that features are properly scaled, encoded, and structured for optima
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 - Convert categorical data into numerical format
 - Scale numerical features
@@ -39,7 +39,7 @@ It ensures that features are properly scaled, encoded, and structured for optima
 
 ---
 
-## 📌 Why Feature Transformation is Important
+##  Why Feature Transformation is Important
 
 - Many ML algorithms assume numerical input
 - Some models are sensitive to feature scale (e.g., distance-based models)
@@ -118,3 +118,55 @@ Create new features using mathematical operations.
 df['price_per_item'] = df['total_price'] / df['quantity']
 df['age_squared'] = df['age'] ** 2
 ```
+# Pillar 4: Feature Selection 
+
+Feature Selection is the process of identifying and selecting the most relevant features for model training while removing irrelevant, redundant, or noisy variables.
+
+The goal is to improve model performance, reduce overfitting, and decrease computational cost.
+
+---
+
+##  Objective
+
+- Remove irrelevant features
+- Reduce dimensionality
+- Improve generalization
+- Increase model interpretability
+- Reduce training time
+
+---
+
+##  Why Feature Selection is Important
+
+Too many features can cause:
+
+- Overfitting
+- Increased model complexity
+- Longer training time
+- Curse of dimensionality
+- Reduced interpretability
+
+Better features → Simpler model → Better generalization.
+
+---
+
+#  Types of Feature Selection Methods
+
+---
+
+## 1️ Filter Methods
+
+Evaluate features based on statistical properties.
+
+### Techniques:
+- Correlation threshold
+- Chi-Square test
+- ANOVA test
+- Variance Threshold
+
+### Example:
+```python
+from sklearn.feature_selection import VarianceThreshold
+
+selector = VarianceThreshold(threshold=0.01)
+X_selected = selector.fit_transform(X)
