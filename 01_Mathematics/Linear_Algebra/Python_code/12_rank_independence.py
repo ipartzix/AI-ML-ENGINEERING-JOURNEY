@@ -1,100 +1,119 @@
-# Generated from: 12_rank_independence.ipynb
-# Converted at: 2026-02-18T05:00:01.430Z
-# Next step (optional): refactor into modules & generate tests with RunCell
-# Quick start: pip install runcell
-
-# # 07-1 — Rank & Linear Independence
-# 
-# Core Linear Algebra concepts for AI/ML and Core CS.
-
-
-# ## 1. Rank of a Matrix
-# The **rank** of a matrix is the maximum number of **linearly independent** rows or columns.
-# 
-# Formally:
-# Rank(A) = dimension of column space = dimension of row space.
-
-
-# ### Why Rank Matters in ML
-# - Determines if data is redundant
-# - Used in feature selection
-# - Decides invertibility
-# - Critical in PCA, regression, optimization
-
+"""
+Rank & Linear Independence Utilities
+Core tools for ML feature validation and matrix diagnostics.
+"""
 
 import numpy as np
 
-A = np.array([[1, 2, 3],
-              [2, 4, 6],
-              [1, 1, 1]])
 
-np.linalg.matrix_rank(A)
+# -------------------------------------------------
+# Core Rank Utilities
+# -------------------------------------------------
 
-# ## 2. Linear Dependence vs Independence
-# A set of vectors {v₁, v₂, ..., vₙ} is:
-# - **Linearly Independent** if only trivial solution exists
-# - **Linearly Dependent** if one vector can be written as a combination of others
+def matrix_rank(A: np.ndarray, tol: float = 1e-10) -> int:
+    """
+    Compute matrix rank using SVD-based numerical stability.
+    """
+    if A.ndim != 2:
+        raise ValueError("Input must be a 2D matrix.")
 
-
-# ### Mathematical Definition
-# c₁v₁ + c₂v₂ + ... + cₙvₙ = 0
-# 
-# If all cᵢ = 0 → Independent
-# Else → Dependent
+    U, S, Vt = np.linalg.svd(A, full_matrices=False)
+    return int(np.sum(S > tol))
 
 
-v1 = np.array([1, 2])
-v2 = np.array([2, 4])
-
-np.linalg.matrix_rank(np.column_stack((v1, v2)))
-
-# ## 3. Rank and Linear Independence Relationship
-# - Rank = number of linearly independent columns
-# - If rank < number of columns → dependence exists
-# - Full rank matrix → no redundancy
+def is_full_rank(A: np.ndarray) -> bool:
+    """
+    Check if matrix is full rank.
+    """
+    return matrix_rank(A) == min(A.shape)
 
 
-# ## 4. Row Rank vs Column Rank
-# Important theorem:
-# 
-# **Row Rank = Column Rank**
-# 
-# This holds for all matrices.
+def has_full_column_rank(A: np.ndarray) -> bool:
+    """
+    Check full column rank (rank = number of columns).
+    """
+    return matrix_rank(A) == A.shape[1]
 
 
-# ## 5. Full Rank Matrix
-# - Square matrix: rank = n
-# - Rectangular matrix:
-#   - Full column rank: rank = number of columns
-#   - Full row rank: rank = number of rows
+def has_full_row_rank(A: np.ndarray) -> bool:
+    """
+    Check full row rank (rank = number of rows).
+    """
+    return matrix_rank(A) == A.shape[0]
 
 
-B = np.eye(3)
-np.linalg.matrix_rank(B)
+# -------------------------------------------------
+# Linear Independence Utilities
+# -------------------------------------------------
 
-# ## 6. Rank and Determinant
-# - det(A) ≠ 0 → full rank → invertible
-# - det(A) = 0 → rank deficient → non-invertible
+def are_vectors_linearly_independent(*vectors: np.ndarray) -> bool:
+    """
+    Check if given vectors are linearly independent.
+    """
+    if len(vectors) == 0:
+        raise ValueError("At least one vector required.")
 
-
-np.linalg.det(B)
-
-# ## 7. Rank in Machine Learning Context
-# - Feature matrices
-# - Covariance matrices
-# - Weight matrices
-# - Gradient descent stability
-# - Data leakage detection
+    stacked = np.column_stack(vectors)
+    return matrix_rank(stacked) == len(vectors)
 
 
-# ## 8. Common Interview Facts
-# - Rank ≤ min(rows, columns)
-# - Rank reveals redundancy
-# - Rank invariant under transpose
-# - PCA reduces rank intentionally
+def dependency_info(*vectors: np.ndarray):
+    """
+    Provide rank and independence diagnostics.
+    """
+    stacked = np.column_stack(vectors)
+    rank = matrix_rank(stacked)
+    return {
+        "rank": rank,
+        "num_vectors": len(vectors),
+        "independent": rank == len(vectors),
+    }
 
 
-# ## 9. Summary
-# - Rank measures independent information
-# - Linear independence prevents redundancy
-# - ML models fail on rank-deficient data
+# -------------------------------------------------
+# Determinant & Invertibility
+# -------------------------------------------------
+
+def is_invertible(A: np.ndarray) -> bool:
+    """
+    A square matrix is invertible iff full rank.
+    """
+    if A.shape[0] != A.shape[1]:
+        return False
+
+    return matrix_rank(A) == A.shape[0]
+
+
+def determinant(A: np.ndarray) -> float:
+    """
+    Compute determinant (only valid for square matrices).
+    """
+    if A.shape[0] != A.shape[1]:
+        raise ValueError("Determinant defined only for square matrices.")
+
+    return float(np.linalg.det(A))
+
+
+# -------------------------------------------------
+# Example Usage
+# -------------------------------------------------
+
+if __name__ == "__main__":
+
+    A = np.array([[1, 2, 3],
+                  [2, 4, 6],
+                  [1, 1, 1]])
+
+    print("Rank(A): - 12_rank_independence.py:107", matrix_rank(A))
+    print("Full rank: - 12_rank_independence.py:108", is_full_rank(A))
+
+    v1 = np.array([1, 2])
+    v2 = np.array([2, 4])
+
+    print("Independent vectors: - 12_rank_independence.py:113",
+          are_vectors_linearly_independent(v1, v2))
+
+    B = np.eye(3)
+
+    print("Invertible: - 12_rank_independence.py:118", is_invertible(B))
+    print("Determinant: - 12_rank_independence.py:119", determinant(B))
