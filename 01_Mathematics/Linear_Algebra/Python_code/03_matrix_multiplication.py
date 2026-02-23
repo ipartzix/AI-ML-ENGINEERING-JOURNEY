@@ -1,160 +1,126 @@
-# Generated from: 03_matrix_multiplication.ipynb
-# Converted at: 2026-02-18T04:56:20.594Z
-# Next step (optional): refactor into modules & generate tests with RunCell
-# Quick start: pip install runcell
+"""
+matrix_multiplication.py
 
-# 
-# # 03 — Matrix Multiplication (Linear Algebra for AI/ML)
-# 
-# This notebook is a **complete, exam + ML‑oriented reference** for matrix multiplication.
-# Use videos only to support this notebook, not replace it.
-# 
+Authoritative implementation of matrix multiplication
+for AI / Machine Learning workflows.
+"""
 
+from typing import Tuple
+import numpy as np
 
-# 
-# ## 1. What is Matrix Multiplication?
-# 
-# Matrix multiplication is a binary operation that produces a new matrix by **combining rows of the first matrix with columns of the second matrix**.
-# 
-# If:
-# - A is of shape **(m × n)**
-# - B is of shape **(n × p)**
-# 
-# Then:
-# - Result C = A × B has shape **(m × p)**
-# 
-# ⚠️ Multiplication is **not commutative**:
-# A × B ≠ B × A (in general)
-# 
+Matrix = np.ndarray
 
 
-# 
-# ## 2. Condition for Matrix Multiplication
-# 
-# Matrix multiplication is defined **only if**:
-# Number of columns in A = Number of rows in B
-# 
+# ---------------------------------------------------------------------
+# Validation
+# ---------------------------------------------------------------------
+
+def _validate_multiplication_shapes(A: Matrix, B: Matrix) -> None:
+    """
+    Ensure A (m×n) and B (n×p) are compatible.
+    """
+    if A.ndim != 2 or B.ndim != 2:
+        raise ValueError("Both inputs must be 2D matrices.")
+
+    if A.shape[1] != B.shape[0]:
+        raise ValueError(
+            f"Incompatible shapes: {A.shape} cannot be multiplied with {B.shape}"
+        )
 
 
-# 
-# ## 3. Manual (Element‑Wise) Understanding
-# 
-# Each element of result matrix:
-# 
-# C[i][j] = Σ (A[i][k] × B[k][j])
-# 
-# This is **row × column dot product**
-# 
+# ---------------------------------------------------------------------
+# Core Implementation
+# ---------------------------------------------------------------------
+
+def matmul(A: Matrix, B: Matrix) -> Matrix:
+    """
+    Matrix multiplication:
+
+        If A ∈ R^(m×n)
+        and B ∈ R^(n×p)
+        then C = AB ∈ R^(m×p)
+
+    Uses optimized NumPy backend (BLAS).
+    """
+    _validate_multiplication_shapes(A, B)
+    return A @ B
 
 
-C = A @ B
-C
+# ---------------------------------------------------------------------
+# Manual Implementation (Educational Only)
+# ---------------------------------------------------------------------
 
+def manual_matmul(A: Matrix, B: Matrix) -> Matrix:
+    """
+    Pure Python implementation for learning purposes.
+    Not optimized. O(mnp).
+    """
+    _validate_multiplication_shapes(A, B)
 
-# 
-# ## 4. Step‑by‑Step Manual Calculation (Educational)
-# 
-# Let's compute multiplication manually using loops.
-# 
+    m, n = A.shape
+    _, p = B.shape
 
+    result = np.zeros((m, p))
 
-def manual_matrix_multiply(A, B):
-    result = [[0] * len(B[0]) for _ in range(len(A))]
-    for i in range(len(A)):
-        for j in range(len(B[0])):
-            for k in range(len(B)):
-                result[i][j] += A[i][k] * B[k][j]
+    for i in range(m):
+        for j in range(p):
+            for k in range(n):
+                result[i, j] += A[i, k] * B[k, j]
+
     return result
 
 
-manual_matrix_multiply(A.tolist(), B.tolist())
+# ---------------------------------------------------------------------
+# Identity Matrix
+# ---------------------------------------------------------------------
 
-#
-# ## 5. Matrix Multiplication Using NumPy
-# 
-# NumPy provides **optimized vectorized operations**.
-# 
-
-
-np.matmul(A, B)
-
-A.dot(B)
-
-#
-# ## 6. Important Properties
-# 
-# 1. **Associative**
-#    (A × B) × C = A × (B × C)
-# 
-# 2. **Distributive**
-#    A × (B + C) = A×B + A×C
-# 
-# 3. **Not Commutative**
-#    A × B ≠ B × A
-# 
+def identity(n: int) -> Matrix:
+    """
+    Identity matrix I_n ∈ R^(n×n)
+    """
+    return np.eye(n)
 
 
-# 
-# ## 7. Identity Matrix
-# 
-# I × A = A × I = A
-# 
+# ---------------------------------------------------------------------
+# Properties Demonstration
+# ---------------------------------------------------------------------
+
+def associative_property(A: Matrix, B: Matrix, C: Matrix) -> bool:
+    """
+    Check (AB)C == A(BC)
+    """
+    _validate_multiplication_shapes(A, B)
+    _validate_multiplication_shapes(B, C)
+
+    left = matmul(matmul(A, B), C)
+    right = matmul(A, matmul(B, C))
+
+    return np.allclose(left, right)
 
 
-I = np.eye(3)
-A2 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+def distributive_property(A: Matrix, B: Matrix, C: Matrix) -> bool:
+    """
+    Check A(B + C) == AB + AC
+    """
+    _validate_multiplication_shapes(A, B)
+    _validate_multiplication_shapes(A, C)
 
-I @ A2
+    left = matmul(A, B + C)
+    right = matmul(A, B) + matmul(A, C)
 
-#
-# ## 8. Matrix Multiplication in Machine Learning
-# 
-# Matrix multiplication is the **core of ML and DL**.
-# 
-# Examples:
-# - Linear Regression:  y = XW
-# - Neural Networks:   Z = W·X + b
-# - Attention Mechanism
-# - CNNs and Transformers
-# 
-# Without matrix multiplication, **AI does not exist**.
-# 
+    return np.allclose(left, right)
 
 
-# 
-# ## 9. Example: Linear Model Computation
-# 
+# ---------------------------------------------------------------------
+# Example Usage
+# ---------------------------------------------------------------------
 
+if __name__ == "__main__":
+    A = np.array([[1, 2], [3, 4]], dtype=float)
+    B = np.array([[5, 6], [7, 8]], dtype=float)
 
-# Feature matrix (samples × features)
-X = np.array([[1, 2],
-              [3, 4],
-              [5, 6]])
+    print("Matrix Product:\n - 03_matrix_multiplication.py:122", matmul(A, B))
+    print("Manual Product:\n - 03_matrix_multiplication.py:123", manual_matmul(A, B))
 
-# Weights (features × output)
-W = np.array([[0.1],
-              [0.2]])
-
-# Prediction
-y = X @ W
-y
-
-#
-# ## 10. Common Errors
-# 
-# ❌ Shape mismatch  
-# ❌ Confusing dot product with element‑wise multiplication  
-# ❌ Assuming commutativity  
-# 
-# Always **check dimensions first**.
-# 
-
-
-# 
-# ## 11. Summary
-# 
-# - Matrix multiplication = row × column dot product
-# - Dimension compatibility is mandatory
-# - Backbone of AI/ML computations
-# - Must be mastered deeply
-#
+    I = identity(2)
+    print("Identity Check:\n - 03_matrix_multiplication.py:126", matmul(I, A))
