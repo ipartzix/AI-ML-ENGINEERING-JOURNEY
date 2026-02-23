@@ -1,90 +1,95 @@
-# Generated from: 08_eigenvectors.ipynb
-# Converted at: 2026-02-18T04:59:02.051Z
-# Next step (optional): refactor into modules & generate tests with RunCell
-# Quick start: pip install runcell
-
-# # 08 — Eigenvalues & Eigenvectors
-# 
-# Foundational concept for PCA, transformations, and deep learning intuition.
-
-
-# ## 1. What is an Eigenvector?
-# For a square matrix A, a non-zero vector v is an **eigenvector** if:
-# 
-# A v = λ v
-# 
-# Where λ is the **eigenvalue**.
-
-
-# ### Interpretation
-# - Eigenvectors indicate **directions** that do not change under transformation
-# - Eigenvalues indicate **scaling factor** along that direction
-
-
-# ## 2. Eigenvalue Equation
-# (A − λI)v = 0
-# 
-# Non-trivial solution exists only if:
-# 
-# |A − λI| = 0
-
+"""
+Eigenvalues & Eigenvectors Utilities
+Core linear algebra tools for PCA, transformations, and ML systems.
+"""
 
 import numpy as np
 
-A = np.array([[2, 1],
-              [1, 2]])
 
-values, vectors = np.linalg.eig(A)
-values, vectors
+# -------------------------------------------------
+# Validation
+# -------------------------------------------------
 
-# ## 3. Properties of Eigenvalues
-# - Defined only for square matrices
-# - Matrix can have real or complex eigenvalues
-# - Symmetric matrices → real eigenvalues
+def _validate_square_matrix(A: np.ndarray):
+    if A.ndim != 2 or A.shape[0] != A.shape[1]:
+        raise ValueError("Matrix must be square.")
 
 
-# ## 4. Geometric Intuition
-# Eigenvectors remain on the same line after transformation.
-# Only their magnitude changes.
+# -------------------------------------------------
+# Core Eigen Utilities
+# -------------------------------------------------
+
+def compute_eigendecomposition(A: np.ndarray):
+    """
+    Compute eigenvalues and eigenvectors of a square matrix.
+
+    Returns:
+        eigenvalues (1D array)
+        eigenvectors (columns correspond to eigenvectors)
+    """
+    _validate_square_matrix(A)
+    values, vectors = np.linalg.eig(A)
+    return values, vectors
 
 
-# ## 5. Eigenvectors and Linear Independence
-# - Eigenvectors corresponding to distinct eigenvalues are linearly independent
+def diagonalize_matrix(A: np.ndarray):
+    """
+    Diagonalize matrix A if possible.
+    Returns:
+        P, D, P_inv
+    Raises:
+        ValueError if matrix is not diagonalizable.
+    """
+    values, vectors = compute_eigendecomposition(A)
+
+    if np.linalg.matrix_rank(vectors) < A.shape[0]:
+        raise ValueError("Matrix is not diagonalizable (insufficient independent eigenvectors).")
+
+    P = vectors
+    D = np.diag(values)
+    P_inv = np.linalg.inv(P)
+
+    return P, D, P_inv
 
 
-# ## 6. Diagonalization
-# If A has n independent eigenvectors:
-# 
-# A = PDP⁻¹
-# 
-# Where D is diagonal matrix of eigenvalues
+def verify_diagonalization(A: np.ndarray) -> bool:
+    """
+    Verify A = P D P⁻¹.
+    """
+    P, D, P_inv = diagonalize_matrix(A)
+    return np.allclose(A, P @ D @ P_inv)
 
 
-P = vectors
-D = np.diag(values)
-np.allclose(A, P @ D @ np.linalg.inv(P))
-
-# ## 7. Eigenvalues in Machine Learning
-# - PCA (principal directions)
-# - Covariance matrix analysis
-# - Stability of optimization
-# - Graph Laplacians
-# - Recommendation systems
+def trace_from_eigenvalues(A: np.ndarray) -> float:
+    """
+    Trace equals sum of eigenvalues.
+    """
+    values, _ = compute_eigendecomposition(A)
+    return float(np.sum(values))
 
 
-# ## 8. Eigenvalues vs Singular Values
-# - Eigenvalues apply to square matrices
-# - Singular values apply to all matrices
-# - SVD is more numerically stable
+def determinant_from_eigenvalues(A: np.ndarray) -> float:
+    """
+    Determinant equals product of eigenvalues.
+    """
+    values, _ = compute_eigendecomposition(A)
+    return float(np.prod(values))
 
 
-# ## 9. Common Interview Facts
-# - λ = 0 ⇒ matrix is singular
-# - Trace = sum of eigenvalues
-# - Determinant = product of eigenvalues
+# -------------------------------------------------
+# Example Usage
+# -------------------------------------------------
 
+if __name__ == "__main__":
 
-# ## 10. Summary
-# - Eigenvectors define invariant directions
-# - Eigenvalues define strength of transformation
-# - Core tool behind dimensionality reduction
+    A = np.array([[2, 1],
+                  [1, 2]])
+
+    eigenvalues, eigenvectors = compute_eigendecomposition(A)
+
+    print("Eigenvalues:\n - 08_eigenvectors.py:90", eigenvalues)
+    print("Eigenvectors:\n - 08_eigenvectors.py:91", eigenvectors)
+
+    print("Diagonalization valid: - 08_eigenvectors.py:93", verify_diagonalization(A))
+    print("Trace (from eigenvalues): - 08_eigenvectors.py:94", trace_from_eigenvalues(A))
+    print("Determinant (from eigenvalues): - 08_eigenvectors.py:95", determinant_from_eigenvalues(A))
