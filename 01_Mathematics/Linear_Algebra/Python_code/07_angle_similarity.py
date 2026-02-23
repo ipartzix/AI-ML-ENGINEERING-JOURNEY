@@ -1,105 +1,82 @@
-# Generated from: 07_angle_similarity.ipynb
-# Converted at: 2026-02-18T04:58:29.779Z
-# Next step (optional): refactor into modules & generate tests with RunCell
-# Quick start: pip install runcell
-
-# # 07 — Angle Between Vectors & Similarity (Linear Algebra for AI/ML)
-
-
-# 
-# ## 1. Angle Between Two Vectors
-# 
-# The angle between vectors measures **directional similarity**.
-# 
-# Formula:
-# cos(θ) = (a · b) / (‖a‖ ‖b‖)
-# 
-
+"""
+Angle Between Vectors & Cosine Similarity
+Core utilities for ML / AI vector similarity operations.
+"""
 
 import numpy as np
 
-a = np.array([1, 2, 3])
-b = np.array([4, 5, 6])
 
-cos_theta = np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
-cos_theta
+# -------------------------------------------------
+# Core Linear Algebra Utilities
+# -------------------------------------------------
 
-#
-# ## 2. Interpreting the Angle
-# 
-# - cos(θ) = 1 → same direction
-# - cos(θ) = 0 → orthogonal
-# - cos(θ) = -1 → opposite direction
-# 
+def dot_product(a: np.ndarray, b: np.ndarray) -> float:
+    """
+    Compute dot product of two vectors.
+    """
+    _validate_same_shape(a, b)
+    return float(np.dot(a, b))
 
 
-# Orthogonal vectors
-v1 = np.array([1, 0])
-v2 = np.array([0, 1])
-
-np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
-
-
-# 
-# ## 3. Cosine Similarity
-# 
-# Cosine similarity measures **similarity independent of magnitude**.
-# 
-# Used heavily in:
-# - NLP
-# - Recommendation systems
-# - Search engines
-# 
+def vector_norm(v: np.ndarray) -> float:
+    """
+    Compute Euclidean (L2) norm of a vector.
+    """
+    return float(np.linalg.norm(v))
 
 
-# Cosine similarity function
-def cosine_similarity(x, y):
-    return np.dot(x, y) / (np.linalg.norm(x) * np.linalg.norm(y))
+def cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
+    """
+    Compute cosine similarity between two vectors.
+
+    Returns:
+        float in [-1, 1]
+    Raises:
+        ValueError if any vector has zero magnitude.
+    """
+    _validate_same_shape(a, b)
+
+    norm_a = vector_norm(a)
+    norm_b = vector_norm(b)
+
+    if norm_a == 0 or norm_b == 0:
+        raise ValueError("Cosine similarity undefined for zero vector.")
+
+    return dot_product(a, b) / (norm_a * norm_b)
 
 
-cosine_similarity(a, b)
-
-#
-# ## 4. Angle vs Distance
-# 
-# - Angle → direction similarity
-# - Distance → absolute separation
-# 
-# Two vectors can be far apart but still similar in direction.
-# 
+def angle_between_vectors(a: np.ndarray, b: np.ndarray) -> float:
+    """
+    Compute angle (in radians) between two vectors.
+    """
+    cos_theta = cosine_similarity(a, b)
+    return float(np.arccos(np.clip(cos_theta, -1.0, 1.0)))
 
 
-x1 = np.array([1, 1])
-x2 = np.array([10, 10])
+# -------------------------------------------------
+# Validation Helpers
+# -------------------------------------------------
 
-np.linalg.norm(x1 - x2), cosine_similarity(x1, x2)
-
-#
-# ## 5. ML Applications
-# 
-# - Text similarity (TF-IDF, embeddings)
-# - Clustering in high dimensions
-# - Attention mechanisms
-# - Feature comparison
-# 
+def _validate_same_shape(a: np.ndarray, b: np.ndarray):
+    if a.shape != b.shape:
+        raise ValueError("Vectors must have the same dimensions.")
 
 
-# 
-# ## 6. Common Mistakes
-# 
-# ❌ Forgetting normalization  
-# ❌ Using cosine similarity when magnitude matters  
-# ❌ Dividing by zero vectors  
-# 
-# Always normalize carefully.
-# 
+# -------------------------------------------------
+# Example Usage
+# -------------------------------------------------
 
+if __name__ == "__main__":
 
-# 
-# ## 7. Summary
-# 
-# - Angle quantifies direction
-# - Cosine similarity ∈ [-1, 1]
-# - Scale-invariant similarity measure
-# - Critical in ML & AI systems
-#
+    a = np.array([1, 2, 3])
+    b = np.array([4, 5, 6])
+
+    print("Dot Product: - 07_angle_similarity.py:74", dot_product(a, b))
+    print("Cosine Similarity: - 07_angle_similarity.py:75", cosine_similarity(a, b))
+    print("Angle (radians): - 07_angle_similarity.py:76", angle_between_vectors(a, b))
+
+    # Orthogonal example
+    v1 = np.array([1, 0])
+    v2 = np.array([0, 1])
+
+    print("Orthogonal Cosine: - 07_angle_similarity.py:82", cosine_similarity(v1, v2))
