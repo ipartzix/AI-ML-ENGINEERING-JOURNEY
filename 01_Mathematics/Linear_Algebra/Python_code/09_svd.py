@@ -1,73 +1,100 @@
-# Generated from: 09_svd.ipynb
-# Converted at: 2026-02-18T04:59:12.971Z
-# Next step (optional): refactor into modules & generate tests with RunCell
-# Quick start: pip install runcell
-
-# # 09 — Singular Value Decomposition (SVD)
-# 
-# Authoritative notes for AI/ML, data compression, and dimensionality reduction.
-
-
-# ## 1. Definition
-# For any matrix A ∈ ℝ^(m×n):
-# 
-# A = U Σ Vᵀ
-# 
-# - U: left singular vectors (orthonormal)
-# - Σ: diagonal matrix of singular values
-# - Vᵀ: right singular vectors (orthonormal)
-
-
-# ## 2. Key Properties
-# - SVD exists for **any** matrix
-# - Singular values ≥ 0
-# - Works for square and rectangular matrices
-
+"""
+Singular Value Decomposition (SVD) Utilities
+Core tools for dimensionality reduction, compression, and ML pipelines.
+"""
 
 import numpy as np
 
-A = np.array([[3, 1, 1],
-              [-1, 3, 1]])
 
-U, S, Vt = np.linalg.svd(A)
-U, S, Vt
+# -------------------------------------------------
+# Core SVD Utilities
+# -------------------------------------------------
 
-# ## 3. Geometric Interpretation
-# Transformation = Rotation → Scaling → Rotation
+def compute_svd(A: np.ndarray, full_matrices: bool = False):
+    """
+    Compute Singular Value Decomposition.
 
+    Args:
+        A: Input matrix (m x n)
+        full_matrices: Whether to compute full or reduced SVD
 
-# ## 4. Relation with Eigenvalues
-# Singular values = √(eigenvalues of AᵀA)
+    Returns:
+        U, S, Vt
+    """
+    if A.ndim != 2:
+        raise ValueError("Input must be a 2D matrix.")
 
-
-np.sqrt(np.linalg.eigvals(A.T @ A))
-
-# ## 5. Rank using SVD
-# Rank = number of non-zero singular values
-
-
-np.linalg.matrix_rank(A)
-
-# ## 6. Low-Rank Approximation
-# Used in PCA, noise reduction, compression
+    U, S, Vt = np.linalg.svd(A, full_matrices=full_matrices)
+    return U, S, Vt
 
 
-k = 1
-Ak = U[:, :k] @ np.diag(S[:k]) @ Vt[:k, :]
-Ak
-
-# ## 7. ML Applications
-# - PCA
-# - Recommendation systems
-# - Image compression
-# - Latent Semantic Analysis
+def reconstruct_matrix(U: np.ndarray, S: np.ndarray, Vt: np.ndarray) -> np.ndarray:
+    """
+    Reconstruct matrix from SVD components.
+    """
+    return U @ np.diag(S) @ Vt
 
 
-# ## 8. Interview Facts
-# - SVD always exists
-# - Zero singular value ⇒ rank deficient
-# - More stable than eigen decomposition
+def matrix_rank_from_svd(S: np.ndarray, tol: float = 1e-10) -> int:
+    """
+    Compute matrix rank from singular values.
+    """
+    return int(np.sum(S > tol))
 
 
-# ## 9. Summary
-# SVD is the backbone of dimensionality reduction and modern ML pipelines.
+def low_rank_approximation(A: np.ndarray, k: int):
+    """
+    Compute rank-k approximation using truncated SVD.
+
+    Args:
+        A: Input matrix
+        k: Target rank (k <= min(m, n))
+
+    Returns:
+        Ak: Rank-k approximation
+    """
+    U, S, Vt = compute_svd(A)
+
+    max_rank = min(A.shape)
+    if k > max_rank:
+        raise ValueError(f"k must be ≤ {max_rank}")
+
+    U_k = U[:, :k]
+    S_k = S[:k]
+    Vt_k = Vt[:k, :]
+
+    return U_k @ np.diag(S_k) @ Vt_k
+
+
+def singular_values_from_eigen(A: np.ndarray):
+    """
+    Compute singular values via eigenvalues of AᵀA.
+    (Educational use only — less stable than direct SVD.)
+    """
+    eigvals = np.linalg.eigvals(A.T @ A)
+    return np.sqrt(np.maximum(eigvals, 0))
+
+
+# -------------------------------------------------
+# Example Usage
+# -------------------------------------------------
+
+if __name__ == "__main__":
+
+    A = np.array([[3, 1, 1],
+                  [-1, 3, 1]])
+
+    U, S, Vt = compute_svd(A)
+
+    print("Singular Values:\n - 09_svd.py:89", S)
+    print("Rank (from SVD): - 09_svd.py:90", matrix_rank_from_svd(S))
+
+    A_reconstructed = reconstruct_matrix(U, S, Vt)
+    print("Reconstruction valid: - 09_svd.py:93", np.allclose(A, A_reconstructed))
+
+    # Rank-1 approximation
+    Ak = low_rank_approximation(A, k=1)
+    print("Rank1 Approximation:\n - 09_svd.py:97", Ak)
+
+    # Educational check
+    print("Singular values via eigen: - 09_svd.py:100", singular_values_from_eigen(A))
