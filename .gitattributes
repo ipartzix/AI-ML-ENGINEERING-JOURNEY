@@ -1,15 +1,3 @@
-# Ignore Jupyter notebooks from language stats
 *.ipynb linguist-detectable=false
-
-# Ignore dataset folder
 data/* linguist-detectable=false
-
-# Ignore CSV and raw data files
-*.csv linguist-detectable=false
-*.txt linguist-detectable=false
-
-# Ignore documentation
 docs/* linguist-documentation=true
-
-# Force Python detection
-*.py linguist-language=Python
