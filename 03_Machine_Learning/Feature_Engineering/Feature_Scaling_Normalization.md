@@ -18,7 +18,7 @@ magnitude.
 
 Many ML algorithms are sensitive to the scale of input features.
 
-A. Distance-Based Algorithms
+### A. Distance-Based Algorithms
 
 Examples:
 
@@ -30,3 +30,24 @@ Support Vector Machines (RBF kernel)
 
 Distance metrics such as Euclidean distance are directly influenced by feature magnitude. Without normalization,
 features with larger ranges dominate the distance calculation.
+---
+
+### B. Gradient-Based Optimization
+
+Examples:
+
+Linear Regression
+
+Logistic Regression
+
+Neural Networks
+
+If features have very different scales:
+
+The loss function becomes poorly conditioned.
+
+Gradient descent may converge slowly.
+
+Optimization becomes unstable.
+
+Normalization improves convergence speed and numerical stability.
