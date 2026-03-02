@@ -11,3 +11,22 @@ magnitude.
 ## 2. Mathematical Formulation
 
 ![img.png](img.png)
+
+---
+
+## 3. Requirement of Normalization
+
+Many ML algorithms are sensitive to the scale of input features.
+
+A. Distance-Based Algorithms
+
+Examples:
+
+K-Nearest Neighbors (KNN)
+
+K-Means Clustering
+
+Support Vector Machines (RBF kernel)
+
+Distance metrics such as Euclidean distance are directly influenced by feature magnitude. Without normalization,
+features with larger ranges dominate the distance calculation.
