@@ -17,4 +17,4 @@ plt.title("Alcohol Feature")
 plt.xlabel("Index")
 plt.ylabel("Alcohol")
 plt.show()
-sns.kdeplot(df['Malic acid'])
+sns.kdeplot(df['Malic acid'])# type: ignore
