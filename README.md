@@ -168,6 +168,53 @@ Built a strong theoretical and computational foundation for Machine Learning eng
 
 ---
 
+## February Progress — Data Handling Foundations
+
+### Data Analysis Foundations
+
+Focused on working with structured datasets and developing practical skills required for machine learning workflows.
+
+Worked extensively with:
+
+- **NumPy**
+  - Matrix operations
+  - Vectorized computation
+  - Broadcasting techniques
+  - Numerical manipulation of datasets
+
+- **Pandas**
+  - Data cleaning and preprocessing
+  - Data transformation and filtering
+  - Handling missing values
+  - Structured dataset manipulation
+
+### Data Visualization
+
+- Learned **Matplotlib** for visual data exploration
+- Practiced plotting distributions, scatter plots, and feature relationships
+
+### Project: Exploratory Data Analysis
+
+Performed a basic **Exploratory Data Analysis (EDA)** project.
+
+Key tasks included:
+
+- Data cleaning and preparation
+- Handling missing values
+- Understanding feature relationships
+- Visual exploration of patterns within the dataset
+
+### Feature Engineering (Started)
+
+Began studying techniques used to prepare raw data for machine learning models.
+
+Current topics:
+
+- Handling missing values
+- Encoding categorical variables
+- Basic scaling techniques
+- Data transformation methods
+
 ## Current Status
 
 - Actively maintained  
