@@ -215,6 +215,16 @@ Current topics:
 - Basic scaling techniques
 - Data transformation methods
 
+### Algorithmic Thinking
+
+Started **Data Structures and Algorithms in Python** to strengthen computational problem-solving skills.
+
+### Mathematical Foundations
+
+Began studying **Probability** to build stronger statistical intuition for machine learning models.
+
+
+---
 ## Current Status
 
 - Actively maintained  
