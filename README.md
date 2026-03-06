@@ -223,6 +223,14 @@ Started **Data Structures and Algorithms in Python** to strengthen computational
 
 Began studying **Probability** to build stronger statistical intuition for machine learning models.
 
+### Codebase Improvements
+
+- Converted mathematical experimentation notebooks into **clean Python scripts**
+- Focused on improving **code organization and maintainability**
+
+**Outcome:**  
+Transitioned from theoretical foundations to practical dataset handling, exploratory analysis, and feature preparation,
+establishing the groundwork for structured machine learning workflows.
 
 ---
 ## Current Status
