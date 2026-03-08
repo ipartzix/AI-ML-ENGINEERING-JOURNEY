@@ -95,3 +95,58 @@ Every prediction requires comparing with many stored instances.
 Outliers can affect prediction accuracy.
 
 ---
+
+## Common Instance-Based Algorithms
+
+- K-Nearest Neighbors (KNN)
+- Case-Based Reasoning
+- Locally Weighted Learning
+
+---
+
+# 2. Model-Based Learning
+
+## Definition
+
+**Model-Based Learning** is a machine learning approach where the algorithm **builds a mathematical model from training data** and uses that model to make predictions.
+
+Instead of storing all examples, the algorithm **learns patterns and relationships in the data**.
+
+---
+
+## How Model-Based Learning Works
+
+1. Choose a model type.
+2. Train the model on training data.
+3. Learn parameters that fit the data.
+4. Use the trained model for predictions.
+
+```
+
+Training Data → Model Training → Learn Parameters → Predict New Data
+
+```
+
+---
+
+## Example
+
+### Linear Regression
+
+In **Linear Regression**, the model learns a mathematical relationship:
+
+```
+
+y = w₁x₁ + w₂x₂ + b
+
+```
+
+Where:
+
+- `x` = input features
+- `w` = learned weights
+- `b` = bias
+
+After training, the model uses this equation to predict values for new inputs.
+
+---
