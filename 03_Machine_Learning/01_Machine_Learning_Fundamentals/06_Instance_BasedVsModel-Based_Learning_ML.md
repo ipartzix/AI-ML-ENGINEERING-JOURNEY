@@ -222,3 +222,29 @@ Used in:
 - Similarity search
 
 ---
+
+### Model-Based Systems
+
+Used in:
+
+- Credit scoring
+- Image recognition
+- Speech recognition
+- Medical diagnosis
+- Autonomous systems
+
+---
+
+# 5. Key Takeaways
+
+- **Instance-Based Learning** memorizes training examples and compares new data with stored instances.
+- **Model-Based Learning** builds a mathematical model to represent patterns in the data.
+- Instance-based learning is **memory-intensive but flexible**.
+- Model-based learning is **efficient and scalable for large systems**.
+
+---
+
+# Summary
+
+Machine learning algorithms can be categorized by **how they generalize knowledge from data**.  
+Instance-based learning relies on **similarity between stored examples**, while model-based learning builds **generalized models that capture relationships within the data**. Understanding both approaches is fundamental for designing effective machine learning systems.
