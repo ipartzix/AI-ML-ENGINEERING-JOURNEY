@@ -150,3 +150,75 @@ Where:
 After training, the model uses this equation to predict values for new inputs.
 
 ---
+
+## Characteristics of Model-Based Learning
+
+| Feature | Description |
+|------|------|
+| Learning Type | Eager learning |
+| Training Time | High |
+| Prediction Time | Fast |
+| Memory Usage | Low |
+| Model Structure | Explicit model |
+
+---
+
+## Advantages
+
+### 1. Faster Predictions
+Once trained, predictions are quick.
+
+### 2. Lower Memory Usage
+The model stores **parameters instead of entire datasets**.
+
+### 3. Better Scalability
+Works well with large datasets.
+
+---
+
+## Disadvantages
+
+### 1. Requires Training
+Model training can take significant time.
+
+### 2. Model Assumptions
+If the chosen model is incorrect, performance may suffer.
+
+### 3. Less Flexible
+Some models struggle with very complex patterns.
+
+---
+
+## Common Model-Based Algorithms
+
+- Linear Regression
+- Logistic Regression
+- Decision Trees
+- Support Vector Machines
+- Neural Networks
+
+---
+
+# 3. Instance-Based vs Model-Based Learning
+
+| Feature | Instance-Based Learning | Model-Based Learning |
+|------|------|------|
+| Learning Style | Lazy Learning | Eager Learning |
+| Training Phase | Minimal | Required |
+| Memory Usage | High | Low |
+| Prediction Speed | Slow | Fast |
+| Model Representation | Stores examples | Learns mathematical model |
+
+---
+
+# 4. Real-World Usage
+
+### Instance-Based Systems
+
+Used in:
+
+- Recommendation systems
+- Pattern matching
+- Similarity search
+
+---
