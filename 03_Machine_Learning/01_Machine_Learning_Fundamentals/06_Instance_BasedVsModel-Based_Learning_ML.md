@@ -58,3 +58,40 @@ Example:
 If most neighbors belong to **Class A**, the new data point is classified as **Class A**.
 
 ---
+## Characteristics of Instance-Based Learning
+
+| Feature | Description |
+|------|------|
+| Learning Type | Lazy learning |
+| Training Time | Very low |
+| Prediction Time | High |
+| Memory Usage | High |
+| Model Structure | No explicit model |
+
+---
+
+## Advantages
+
+### 1. Simple Implementation
+Instance-based algorithms are easy to implement.
+
+### 2. Flexible Learning
+They can adapt easily to **complex decision boundaries**.
+
+### 3. No Training Phase Required
+Most of the computation happens during prediction.
+
+---
+
+## Disadvantages
+
+### 1. High Memory Usage
+The entire dataset must be stored.
+
+### 2. Slow Prediction
+Every prediction requires comparing with many stored instances.
+
+### 3. Sensitive to Noise
+Outliers can affect prediction accuracy.
+
+---
