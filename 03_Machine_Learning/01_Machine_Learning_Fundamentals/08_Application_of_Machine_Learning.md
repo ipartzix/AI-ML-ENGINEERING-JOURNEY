@@ -37,3 +37,38 @@ Online platforms recommend products based on **user browsing and purchase histor
 
 ---
 
+# 4. Natural Language Processing (NLP)
+
+Machine learning enables computers to **understand and process human language**.
+
+### Applications
+
+- Chatbots
+- Language translation
+- Sentiment analysis
+- Speech recognition
+- Text summarization
+
+### Example
+
+Virtual assistants understand voice commands and respond intelligently.
+
+---
+
+# 5. Computer Vision
+
+Computer vision uses machine learning to enable computers to **interpret and understand visual information from images and videos**.
+
+### Applications
+
+- Face recognition
+- Object detection
+- Image classification
+- Autonomous vehicles
+- Medical imaging
+
+### Example
+
+Self-driving cars use computer vision systems to detect **pedestrians, vehicles, and traffic signs**.
+
+---
