@@ -51,3 +51,64 @@ If a hiring model is trained mostly on resumes from one demographic group, it ma
 
 ---
 
+# 4. Irrelevant Features
+
+Not all features in a dataset contribute to prediction accuracy.
+
+Irrelevant features can:
+
+- Increase model complexity
+- Reduce prediction accuracy
+- Increase training time
+
+This problem is solved using **feature selection** and **feature engineering techniques**.
+
+---
+
+# 5. Overfitting
+
+**Overfitting** occurs when a model learns the training data **too well**, including noise and random patterns.
+
+As a result:
+
+- Training accuracy becomes very high
+- Test accuracy becomes low
+
+### Causes
+
+- Too many model parameters
+- Small training dataset
+- Excessive training
+
+### Solutions
+
+- Regularization
+- Cross-validation
+- More training data
+- Simpler models
+
+---
+
+# 6. Underfitting
+
+**Underfitting** occurs when a model is **too simple** to capture patterns in the data.
+
+Characteristics:
+
+- Low training accuracy
+- Low testing accuracy
+
+### Causes
+
+- Oversimplified model
+- Insufficient training
+- Poor feature representation
+
+### Solutions
+
+- Use more complex models
+- Improve feature engineering
+- Increase training time
+
+---
+
