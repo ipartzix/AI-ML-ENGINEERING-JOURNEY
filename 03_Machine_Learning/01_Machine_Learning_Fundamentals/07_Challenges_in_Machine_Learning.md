@@ -112,3 +112,118 @@ Characteristics:
 
 ---
 
+# 7. Data Drift and Concept Drift
+
+In real-world systems, data patterns often **change over time**.
+
+This is called **Concept Drift**.
+
+### Example
+
+- User preferences change
+- Market trends change
+- Fraud patterns evolve
+
+When drift occurs, the model becomes **less accurate**.
+
+### Solution
+
+- Continuous monitoring
+- Periodic retraining
+- Online learning systems
+
+---
+
+# 8. Computational Cost
+
+Training machine learning models can require **significant computational resources**.
+
+Large datasets and complex models demand:
+
+- High CPU/GPU power
+- Large memory
+- Long training times
+
+This challenge becomes significant in **deep learning systems**.
+
+---
+
+# 9. Model Interpretability
+
+Some machine learning models act like **black boxes**.
+
+Examples:
+
+- Deep neural networks
+- Complex ensemble models
+
+It becomes difficult to understand:
+
+- Why a model made a prediction
+- Which features influenced the result
+
+Interpretability is important in fields like:
+
+- Healthcare
+- Finance
+- Legal systems
+
+---
+
+# 10. Deployment and Maintenance
+
+Building a model is only **one part of the ML lifecycle**.
+
+Deploying and maintaining ML systems introduces additional challenges:
+
+- Model monitoring
+- Performance degradation
+- Data pipeline management
+- Infrastructure scaling
+
+This stage is often called **MLOps**.
+
+---
+
+# 11. Ethical and Privacy Issues
+
+Machine learning systems can raise **ethical concerns**, such as:
+
+- Bias in predictions
+- Privacy violations
+- Data misuse
+- Unfair automated decisions
+
+Responsible AI practices are required to ensure **fair and ethical ML systems**.
+
+---
+
+# Summary Table
+
+| Challenge | Description |
+|------|------|
+| Insufficient Data | Not enough data to learn patterns |
+| Poor Data Quality | Noisy or incorrect data |
+| Non-Representative Data | Biased training data |
+| Irrelevant Features | Unimportant features affecting performance |
+| Overfitting | Model learns noise in training data |
+| Underfitting | Model too simple to capture patterns |
+| Concept Drift | Data distribution changes over time |
+| Computational Cost | High resource requirements |
+| Interpretability | Hard to understand model decisions |
+| Deployment Issues | Difficulty managing ML systems in production |
+
+---
+
+# Key Takeaways
+
+- Machine learning success depends heavily on **data quality and representation**.
+- Both **overfitting and underfitting** must be carefully controlled.
+- Real-world ML systems must handle **data drift and scalability challenges**.
+- Ethical considerations and model transparency are becoming increasingly important.
+
+---
+
+# Final Note
+
+Understanding these challenges is critical for building **reliable machine learning systems** that perform well in real-world environments.
