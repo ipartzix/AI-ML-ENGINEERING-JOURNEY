@@ -154,3 +154,46 @@ Machine learning is used to deliver **personalized content and improve user expe
 Streaming platforms recommend movies based on **watch history and preferences**.
 
 ---
+# 11. Smart Assistants
+
+Machine learning powers intelligent assistants that interact with users.
+
+### Applications
+
+- Voice recognition
+- Task automation
+- Smart home control
+- Personalized assistance
+
+These systems rely on **natural language processing and speech recognition**.
+
+---
+
+# Summary Table
+
+| Industry | Machine Learning Applications |
+|------|------|
+| Healthcare | Disease detection, medical imaging |
+| Finance | Fraud detection, credit scoring |
+| E-commerce | Recommendation systems |
+| NLP | Chatbots, translation |
+| Computer Vision | Image recognition |
+| Autonomous Vehicles | Self-driving technology |
+| Cybersecurity | Threat detection |
+| Manufacturing | Predictive maintenance |
+| Agriculture | Crop monitoring |
+| Entertainment | Content recommendation |
+
+---
+
+# Key Takeaways
+
+- Machine learning is used in **almost every modern industry**.
+- It enables systems to **analyze data, learn patterns, and make predictions automatically**.
+- The impact of ML continues to grow as **data and computational resources increase**.
+
+---
+
+# Final Note
+
+Machine learning applications are expanding rapidly and are becoming essential in solving **real-world problems across healthcare, finance, transportation, agriculture, and technology industries**.
