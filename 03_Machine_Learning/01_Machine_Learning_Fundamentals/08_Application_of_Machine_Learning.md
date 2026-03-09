@@ -72,3 +72,85 @@ Computer vision uses machine learning to enable computers to **interpret and und
 Self-driving cars use computer vision systems to detect **pedestrians, vehicles, and traffic signs**.
 
 ---
+# 6. Autonomous Vehicles
+
+Machine learning plays a crucial role in **self-driving vehicle systems**.
+
+### Applications
+
+- Lane detection
+- Traffic sign recognition
+- Path planning
+- Obstacle detection
+
+These systems combine **computer vision, deep learning, and reinforcement learning**.
+
+---
+
+# 7. Cybersecurity
+
+Machine learning helps detect **cyber threats and abnormal activities** in networks.
+
+### Applications
+
+- Malware detection
+- Network intrusion detection
+- Spam filtering
+- Phishing detection
+
+### Example
+
+Email services automatically filter **spam emails** using ML models.
+
+---
+
+# 8. Manufacturing and Industry
+
+Machine learning is widely used in **industrial automation and predictive maintenance**.
+
+### Applications
+
+- Predictive maintenance
+- Quality control
+- Production optimization
+- Fault detection
+
+### Example
+
+Factories use ML models to predict **machine failures before they occur**.
+
+---
+
+# 9. Agriculture
+
+Machine learning helps improve **crop yield and farming efficiency**.
+
+### Applications
+
+- Crop disease detection
+- Soil analysis
+- Yield prediction
+- Smart irrigation systems
+
+### Example
+
+Computer vision models detect **plant diseases from leaf images**.
+
+---
+
+# 10. Entertainment and Media
+
+Machine learning is used to deliver **personalized content and improve user experience**.
+
+### Applications
+
+- Movie recommendations
+- Music recommendations
+- Content personalization
+- Video analysis
+
+### Example
+
+Streaming platforms recommend movies based on **watch history and preferences**.
+
+---
