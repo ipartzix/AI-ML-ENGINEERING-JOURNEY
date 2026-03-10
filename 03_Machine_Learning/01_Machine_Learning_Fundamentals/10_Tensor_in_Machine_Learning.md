@@ -146,3 +146,100 @@ Example:
 ```
 
 ---
+# 7. Higher-Dimensional Tensors
+
+Deep learning models often use **4D or higher-dimensional tensors**.
+
+Example:
+
+### Batch of Images
+
+```
+Batch Size × Height × Width × Channels
+```
+
+Example:
+
+```
+32 × 224 × 224 × 3
+```
+
+This means:
+
+- 32 images
+- each image 224×224 pixels
+- 3 color channels
+
+---
+
+# 8. Why Tensors Are Important in Machine Learning
+
+Tensors enable efficient processing of large datasets and complex operations.
+
+### Key Advantages
+
+#### 1. Efficient Computation
+
+Tensors allow frameworks to perform **parallel mathematical operations** using GPUs and TPUs.
+
+#### 2. Structured Data Representation
+
+They represent complex data structures such as:
+
+- Images
+- Videos
+- Text embeddings
+- Neural network weights
+
+#### 3. Compatibility with Deep Learning
+
+All deep learning models operate on tensors.
+
+---
+
+# 9. Tensors in Neural Networks
+
+Neural networks use tensors to store:
+
+- Input data
+- Weights
+- Bias values
+- Intermediate activations
+- Output predictions
+
+Example flow:
+
+```
+Input Tensor → Neural Network Layers → Output Tensor
+```
+
+Each layer performs **tensor operations such as matrix multiplication and transformations**.
+
+---
+
+# 10. Tensor Example in Python
+
+Example using NumPy:
+
+```python
+import numpy as np
+
+# Scalar
+scalar = np.array(5)
+
+# Vector
+vector = np.array([1,2,3])
+
+# Matrix
+matrix = np.array([[1,2],[3,4]])
+
+# 3D Tensor
+tensor3d = np.array([
+    [[1,2],[3,4]],
+    [[5,6],[7,8]]
+])
+
+print(tensor3d.shape)
+```
+
+---
