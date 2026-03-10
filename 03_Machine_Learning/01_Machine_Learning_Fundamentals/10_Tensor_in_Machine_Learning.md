@@ -243,3 +243,65 @@ print(tensor3d.shape)
 ```
 
 ---
+
+# 11. Tensor Shape and Rank
+
+### Shape
+
+The **shape** of a tensor describes the size of each dimension.
+
+Example:
+
+```
+Tensor Shape: (3, 4)
+```
+
+This means:
+
+```
+3 rows
+4 columns
+```
+
+### Rank
+
+The **rank** is the number of dimensions.
+
+Example:
+
+| Tensor | Rank |
+|------|------|
+| Scalar | 0 |
+| Vector | 1 |
+| Matrix | 2 |
+| 3D Tensor | 3 |
+
+---
+
+# 12. Tensors in Machine Learning Frameworks
+
+Modern ML frameworks use tensors as their **core data structure**.
+
+Examples:
+
+- PyTorch
+- TensorFlow
+- NumPy
+
+These libraries provide optimized tensor operations for **large-scale machine learning tasks**.
+
+---
+
+# Key Takeaways
+
+- A tensor is a **multi-dimensional array used to represent data in machine learning**.
+- Scalars, vectors, and matrices are all **special cases of tensors**.
+- Deep learning models rely heavily on **high-dimensional tensors**.
+- Efficient tensor operations enable **large-scale neural network training**.
+
+---
+
+# Summary
+
+Tensors are the **foundation of modern machine learning and deep learning systems**.  
+They provide a flexible and efficient way to represent numerical data across multiple dimensions and allow machine learning frameworks to perform complex computations required for training intelligent models.
