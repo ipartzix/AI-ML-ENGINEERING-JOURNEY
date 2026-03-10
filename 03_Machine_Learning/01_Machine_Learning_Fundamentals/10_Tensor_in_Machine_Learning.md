@@ -51,3 +51,98 @@ Example in machine learning:
 - Loss value
 
 ---
+
+# 4. Vector (1D Tensor)
+
+A **vector** is a one-dimensional array of numbers.
+
+Example:
+
+```
+[2, 4, 6, 8]
+```
+
+Characteristics:
+
+- One dimension
+- Represents a list of values
+
+Example in ML:
+
+- Feature vector of a data sample
+
+Example:
+
+```
+[age, salary, experience]
+```
+
+---
+
+# 5. Matrix (2D Tensor)
+
+A **matrix** is a two-dimensional array organized into **rows and columns**.
+
+Example:
+
+```
+[
+ [1, 2, 3],
+ [4, 5, 6]
+]
+```
+
+Characteristics:
+
+- Two dimensions
+- Rows × Columns
+
+Example in ML:
+
+- Dataset representation
+- Weight matrices in neural networks
+
+---
+
+# 6. 3D Tensor
+
+A **3D tensor** represents data with three dimensions.
+
+Example:
+
+```
+[
+ [
+  [1,2],
+  [3,4]
+ ],
+ [
+  [5,6],
+  [7,8]
+ ]
+]
+```
+
+Example in ML:
+
+A **color image**.
+
+Images contain:
+
+- Height
+- Width
+- Color channels (RGB)
+
+Example:
+
+```
+Height × Width × Channels
+```
+
+Example:
+
+```
+224 × 224 × 3
+```
+
+---
