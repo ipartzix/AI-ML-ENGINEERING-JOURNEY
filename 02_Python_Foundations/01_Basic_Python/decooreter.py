@@ -3,7 +3,7 @@
 #
 # ---
 #
-# ### 🔧 Concept: What is a Decorator?
+# ###  Concept: What is a Decorator?
 #
 # A **decorator** is a function that:
 #
@@ -13,7 +13,7 @@
 #
 # ---
 #
-# ### ✅ Your Code (with explanation)
+# ###  Your Code (with explanation)
 #
 # ```python
 # # Step 1: Define a decorator function that takes another function as input
@@ -47,7 +47,7 @@
 #
 # ---
 #
-# ### 🧠 Output When You Run This:
+# ###  Output When You Run This:
 #
 # ```
 # this is the 1st line I execute start
@@ -61,7 +61,7 @@
 #
 # ---
 #
-# ### ✨ Optional: Using `@` Syntax (Cleaner Way)
+# ###  Optional: Using `@` Syntax (Cleaner Way)
 #
 # Instead of manually writing `f = decorator(say__hello)`, you can write:
 #
@@ -76,7 +76,7 @@
 # This does the **same thing**, but is more Pythonic and easier to read.
 #
 # ---
-# ### 📝 Summary:
+# ###  Summary:
 #
 # | Part            | What it does                                            |
 # | --------------- | ------------------------------------------------------- |
@@ -89,13 +89,13 @@
 
 def decorator(func):# it is the function that teck another functon as an argument and return function
     def wrapper():
-        print("this is the 1st line I execute start")
+        print("this is the 1st line I execute start - decooreter.py:92")
         func()
-        print("i want to see the line which time print")
+        print("i want to see the line which time print - decooreter.py:94")
     return wrapper
 
 def say__hello():
-    print("HelloI!")
+    print("HelloI! - decooreter.py:98")
 
 f=decorator(say__hello)
 f()
