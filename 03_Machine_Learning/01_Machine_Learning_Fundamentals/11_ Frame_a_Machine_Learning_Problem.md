@@ -49,3 +49,29 @@ Example in machine learning:
 - Loss value
 
 ---
+# 4. Vector (1D Tensor)
+
+A **vector** is a one-dimensional array of numbers.
+
+Example:
+
+```
+[2, 4, 6, 8]
+```
+
+Characteristics:
+
+- One dimension
+- Represents a list of values
+
+Example in ML:
+
+- Feature vector of a data sample
+
+Example:
+
+```
+[age, salary, experience]
+```
+
+---
