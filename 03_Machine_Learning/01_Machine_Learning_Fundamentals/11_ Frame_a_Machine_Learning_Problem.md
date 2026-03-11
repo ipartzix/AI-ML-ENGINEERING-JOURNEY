@@ -100,3 +100,46 @@ Example in ML:
 - Weight matrices in neural networks
 
 ---
+
+# 6. 3D Tensor
+
+A **3D tensor** represents data with three dimensions.
+
+Example:
+
+```
+[
+ [
+  [1,2],
+  [3,4]
+ ],
+ [
+  [5,6],
+  [7,8]
+ ]
+]
+```
+
+Example in ML:
+
+A **color image**.
+
+Images contain:
+
+- Height
+- Width
+- Color channels (RGB)
+
+Example:
+
+```
+Height × Width × Channels
+```
+
+Example:
+
+```
+224 × 224 × 3
+```
+
+---
