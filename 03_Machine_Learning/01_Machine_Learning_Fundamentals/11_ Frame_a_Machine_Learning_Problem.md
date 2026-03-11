@@ -143,3 +143,28 @@ Example:
 ```
 
 ---
+# 7. Higher-Dimensional Tensors
+
+Deep learning models often use **4D or higher-dimensional tensors**.
+
+Example:
+
+### Batch of Images
+
+```
+Batch Size × Height × Width × Channels
+```
+
+Example:
+
+```
+32 × 224 × 224 × 3
+```
+
+This means:
+
+- 32 images
+- each image 224×224 pixels
+- 3 color channels
+
+---
