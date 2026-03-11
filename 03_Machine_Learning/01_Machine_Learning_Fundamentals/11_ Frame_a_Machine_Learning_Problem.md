@@ -75,3 +75,28 @@ Example:
 ```
 
 ---
+
+# 5. Matrix (2D Tensor)
+
+A **matrix** is a two-dimensional array organized into **rows and columns**.
+
+Example:
+
+```
+[
+ [1, 2, 3],
+ [4, 5, 6]
+]
+```
+
+Characteristics:
+
+- Two dimensions
+- Rows × Columns
+
+Example in ML:
+
+- Dataset representation
+- Weight matrices in neural networks
+
+---
