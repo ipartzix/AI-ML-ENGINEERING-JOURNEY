@@ -168,3 +168,137 @@ This means:
 - 3 color channels
 
 ---
+
+# 8. Why Tensors Are Important in Machine Learning
+
+Tensors enable efficient processing of large datasets and complex operations.
+
+### Key Advantages
+
+#### 1. Efficient Computation
+
+Tensors allow frameworks to perform **parallel mathematical operations** using GPUs and TPUs.
+
+#### 2. Structured Data Representation
+
+They represent complex data structures such as:
+
+- Images
+- Videos
+- Text embeddings
+- Neural network weights
+
+#### 3. Compatibility with Deep Learning
+
+All deep learning models operate on tensors.
+
+---
+
+# 9. Tensors in Neural Networks
+
+Neural networks use tensors to store:
+
+- Input data
+- Weights
+- Bias values
+- Intermediate activations
+- Output predictions
+
+Example flow:
+
+```
+Input Tensor → Neural Network Layers → Output Tensor
+```
+
+Each layer performs **tensor operations such as matrix multiplication and transformations**.
+
+---
+
+# 10. Tensor Example in Python
+
+Example using NumPy:
+
+```python
+import numpy as np
+
+# Scalar
+scalar = np.array(5)
+
+# Vector
+vector = np.array([1,2,3])
+
+# Matrix
+matrix = np.array([[1,2],[3,4]])
+
+# 3D Tensor
+tensor3d = np.array([
+    [[1,2],[3,4]],
+    [[5,6],[7,8]]
+])
+
+print(tensor3d.shape)
+```
+
+---
+
+# 11. Tensor Shape and Rank
+
+### Shape
+
+The **shape** of a tensor describes the size of each dimension.
+
+Example:
+
+```
+Tensor Shape: (3, 4)
+```
+
+This means:
+
+```
+3 rows
+4 columns
+```
+
+### Rank
+
+The **rank** is the number of dimensions.
+
+Example:
+
+| Tensor | Rank |
+|------|------|
+| Scalar | 0 |
+| Vector | 1 |
+| Matrix | 2 |
+| 3D Tensor | 3 |
+
+---
+
+# 12. Tensors in Machine Learning Frameworks
+
+Modern ML frameworks use tensors as their **core data structure**.
+
+Examples:
+
+- PyTorch
+- TensorFlow
+- NumPy
+
+These libraries provide optimized tensor operations for **large-scale machine learning tasks**.
+
+---
+
+# Key Takeaways
+
+- A tensor is a **multi-dimensional array used to represent data in machine learning**.
+- Scalars, vectors, and matrices are all **special cases of tensors**.
+- Deep learning models rely heavily on **high-dimensional tensors**.
+- Efficient tensor operations enable **large-scale neural network training**.
+
+---
+
+# Summary
+
+Tensors are the **foundation of modern machine learning and deep learning systems**.  
+They provide a flexible and efficient way to represent numerical data across multiple dimensions and allow machine learning frameworks to perform complex computations required for training intelligent models.
