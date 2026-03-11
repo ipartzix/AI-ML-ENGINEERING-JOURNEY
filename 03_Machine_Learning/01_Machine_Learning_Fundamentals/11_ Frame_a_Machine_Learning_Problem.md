@@ -28,3 +28,24 @@ Tensors are classified based on their **number of dimensions**, also called **ra
 | Higher-Dimensional Tensor | 4D+ | Video or batches of images |
 
 ---
+# 3. Scalar (0D Tensor)
+
+A **scalar** is a single numeric value.
+
+Example:
+
+```
+5
+```
+
+Characteristics:
+
+- No dimensions
+- Represents a single value
+
+Example in machine learning:
+
+- Learning rate
+- Loss value
+
+---
