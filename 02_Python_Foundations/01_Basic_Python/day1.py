@@ -1,3 +1,5 @@
-print("hii")
+print("hii - day1.py:1")
 print(8)
-print("hii with 18")
+print("hii with 18 - day1.py:3")
+print(123_55)
+print(22/2)
