@@ -6,7 +6,7 @@ This is a **discipline-first roadmap**, not a tutorial dump.
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 - Build deep mathematical and statistical foundations
 - Understand ML and DL from first principles
@@ -18,7 +18,7 @@ This is a **discipline-first roadmap**, not a tutorial dump.
 
 ---
 
-## 🧭 Orientation (How This Repository Is Used)
+##  Orientation (How This Repository Is Used)
 
 ### Learning Principles
 - Fundamentals before frameworks
@@ -42,7 +42,7 @@ This is a **discipline-first roadmap**, not a tutorial dump.
 
 ---
 
-## 🛣️ Roadmap Breakdown
+##  Roadmap Breakdown
 
 ### Stage 1 — Foundational Math & Python
 **Goal:** Build the mathematical and programming base required for all ML systems.
