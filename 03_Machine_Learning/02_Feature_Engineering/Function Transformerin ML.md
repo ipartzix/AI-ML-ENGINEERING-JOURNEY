@@ -43,3 +43,23 @@ X' = log(X)
 import numpy as np
 
 X_log = np.log1p(X)
+
+🔹 3. Reciprocal Transformation
+📌 Formula
+
+X' = 1 / X
+
+📌 When to Use
+
+Strongly reduces the effect of large values
+
+Useful when relationship is inverse
+
+📌 Important Notes
+
+Cannot handle zero values
+
+Very sensitive to small values
+
+📌 Example
+X_reciprocal = 1 / X
