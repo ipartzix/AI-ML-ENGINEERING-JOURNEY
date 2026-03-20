@@ -63,3 +63,25 @@ Very sensitive to small values
 
 📌 Example
 X_reciprocal = 1 / X
+
+🔹 4. Square Root Transformation
+📌 Formula
+
+X' = √X
+
+📌 When to Use
+
+Moderately reduces skewness
+
+Works well for count data
+
+📌 Important Notes
+
+Works only for non-negative values
+
+Less aggressive than log transform
+
+📌 Example
+import numpy as np
+
+X_sqrt = np.sqrt(X)
