@@ -7,3 +7,4 @@ print("This is a test run coide")
 print(123456654321)
 for i in range(10):
     print(i+1)
+print("all done")
