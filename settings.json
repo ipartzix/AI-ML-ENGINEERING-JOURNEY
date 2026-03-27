@@ -2,6 +2,6 @@
   "codeQL.githubDatabase.download": "never",
   "sarif-viewer.connectToGithubCodeScanning": "off",
   "code-runner.executorMap": {
-    "python": "C:\\Users\\D\\anaconda3\\envs\\aiml_engineering\\python.exe -u"
+    "python": "/home/ipartzix/anaconda3/envs/AI-ML_Engineering_env/bin/python -u"
   }
 }
