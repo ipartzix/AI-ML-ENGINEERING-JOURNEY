@@ -76,3 +76,22 @@ As dimensions increase:
 
 ---
 
+## 7. When It Matters Most
+
+- High number of features (columns)
+- Small dataset size
+- Distance-based algorithms (kNN, clustering)
+
+---
+
+## 8. Interview Summary
+
+> The Curse of Dimensionality describes the challenges that arise when working with high-dimensional data, such as sparsity, unreliable distance metrics, and overfitting. It motivates the use of feature selection and dimensionality reduction techniques.
+
+---
+
+## 9. Key Takeaways
+
+- More features ≠ better model  
+- High dimensions reduce model performance  
+- Always control dimensionality using proper techniques  
