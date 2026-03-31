@@ -54,3 +54,25 @@ As dimensions increase:
 
 ---
 
+## 5. Example
+
+- 1D: Points are close → easy to analyze  
+- 2D: Still manageable  
+- 100D: Points are extremely far apart → structure lost  
+
+---
+
+## 6. Solutions
+
+### 6.1 Feature Selection
+- Remove irrelevant or redundant features
+
+### 6.2 Dimensionality Reduction
+- PCA (Principal Component Analysis)
+- LDA (Linear Discriminant Analysis)
+
+### 6.3 Regularization
+- Techniques like Ridge and Lasso help reduce overfitting
+
+---
+
