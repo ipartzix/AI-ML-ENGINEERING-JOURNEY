@@ -35,3 +35,22 @@ As dimensions increase, data becomes sparse and many machine learning algorithms
 
 ---
 
+## 3. Mathematical Intuition
+
+As dimensions increase:
+- Volume of space increases exponentially
+- Data required to maintain density also increases exponentially
+
+---
+
+## 4. Impact on Algorithms
+
+| Algorithm | Effect |
+|----------|--------|
+| kNN | Performs poorly due to unreliable distances |
+| Clustering | Hard to form meaningful clusters |
+| Linear Models | May overfit with too many features |
+| Tree Models | Can handle better but still affected |
+
+---
+
