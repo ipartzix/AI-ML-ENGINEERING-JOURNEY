@@ -19,3 +19,28 @@ PCA transforms the original features into a new set of features called **Princip
 
 ---
 
+##  Feature Selection vs Feature Extraction
+
+### Feature Selection
+- Selects a subset of original features
+- Keeps the most important features
+- Based on importance or spread of data
+
+### Feature Extraction (PCA)
+- Creates **new features** from existing ones
+- These new features are combinations of original features
+- Then selects the most important components
+
+---
+
+##  How PCA Works
+
+1. Standardize the dataset (mean = 0, variance = 1)
+2. Compute covariance matrix
+3. Calculate eigenvalues and eigenvectors
+4. Sort eigenvalues in descending order
+5. Select top *k* eigenvectors (principal components)
+6. Transform data into new lower-dimensional space
+
+---
+
