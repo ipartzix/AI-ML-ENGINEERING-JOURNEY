@@ -74,3 +74,43 @@ PCA transforms the original features into a new set of features called **Princip
 
 ---
 
+##  Why PCA Works
+
+- Variance helps differentiate data points
+- By keeping high-variance directions:
+  - PCA preserves relationships between data points
+- Reduces noise and redundancy
+
+---
+
+##  Summary Points
+
+- PCA is a **feature extraction technique**
+- Reduces dimensionality
+- Solves **curse of dimensionality**
+- Creates **new features (principal components)**
+- Maximizes **variance**
+- Preserves important structure of data
+
+---
+
+##  Limitations
+
+- PCA is linear (cannot capture complex nonlinear patterns)
+- Interpretation of new features is difficult
+- Sensitive to scaling (requires normalization)
+
+---
+
+##  Use Cases
+
+- Data visualization (2D/3D projection)
+- Noise reduction
+- Preprocessing for ML models
+- Compression of large datasets
+
+---
+
+##  One-Line Definition
+> PCA transforms high-dimensional data into a lower-dimensional space by creating new features that maximize variance while preserving data structure.
+```
