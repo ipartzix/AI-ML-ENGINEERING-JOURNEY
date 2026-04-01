@@ -44,3 +44,33 @@ PCA transforms the original features into a new set of features called **Princip
 
 ---
 
+##  Important Concepts
+
+### 1. Curse of Dimensionality
+- As dimensions increase:
+  - Data becomes sparse
+  - Models become complex
+  - Performance decreases
+- PCA reduces dimensions to solve this issue
+
+---
+
+### 2. Variance
+- Variance measures the **spread of data**
+- PCA tries to **maximize variance**
+- Higher variance = more information
+
+ PCA selects directions (axes) where:
+- Data varies the most
+- Information is preserved
+
+---
+
+### 3. New Coordinate System
+- PCA finds new axes (principal components)
+- These axes:
+  - Are rotated versions of original axes
+  - Capture maximum variance
+
+---
+
