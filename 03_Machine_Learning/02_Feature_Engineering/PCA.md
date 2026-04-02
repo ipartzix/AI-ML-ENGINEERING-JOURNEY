@@ -142,3 +142,42 @@ PCA transforms data into a new coordinate system where:
 - And so on...
 
 This helps simplify complex datasets while retaining essential structure.
+## 3. Step-by-Step Solution (Numerical Example)
+### Step 0: Example Dataset
+
+Consider:
+
+\[
+X =
+\begin{bmatrix}
+2 & 4 \\
+4 & 2 \\
+6 & 8 \\
+8 & 6
+\end{bmatrix}
+\]
+
+---
+
+### Step 1: Mean Centering
+
+Compute mean of each column:
+
+\[
+\mu = [5, 5]
+\]
+
+Subtract mean:
+
+\[
+X_{centered} =
+\begin{bmatrix}
+-3 & -1 \\
+-1 & -3 \\
+1 & 3 \\
+3 & 1
+\end{bmatrix}
+\]
+
+---
+
