@@ -181,3 +181,50 @@ X_{centered} =
 
 ---
 
+### Step 2: Covariance Matrix
+
+\[
+C = \frac{1}{n-1} X^T X
+\]
+
+\[
+C =
+\begin{bmatrix}
+6.67 & 4 \\
+4 & 6.67
+\end{bmatrix}
+\]
+
+---
+
+### Step 3: Eigenvalues & Eigenvectors
+
+Solve:
+
+\[
+|C - \lambda I| = 0
+\]
+
+Eigenvalues:
+
+\[
+\lambda_1 = 10.67,\quad \lambda_2 = 2.67
+\]
+
+Eigenvectors:
+
+\[
+v_1 =
+\begin{bmatrix}
+0.707 \\
+0.707
+\end{bmatrix}, \quad
+v_2 =
+\begin{bmatrix}
+-0.707 \\
+0.707
+\end{bmatrix}
+\]
+
+---
+
