@@ -228,3 +228,33 @@ v_2 =
 
 ---
 
+### Step 4: Sort Components
+
+- Largest eigenvalue → **Principal Component 1**
+- Smaller → **Principal Component 2**
+
+---
+
+### Step 5: Projection
+
+Choose \( k = 1 \):
+
+\[
+W = v_1
+\]
+
+\[
+Z = X_{centered} W
+\]
+
+Result:
+
+\[
+Z =
+\begin{bmatrix}
+-2.83 \\
+-2.83 \\
+2.83 \\
+2.83
+\end{bmatrix}
+\]
