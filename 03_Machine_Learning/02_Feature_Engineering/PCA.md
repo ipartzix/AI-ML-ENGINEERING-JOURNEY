@@ -131,3 +131,14 @@ Project Data
 ↓
 Reduced Dataset
 ```
+
+---
+
+## 12. Key Takeaway
+
+PCA transforms data into a new coordinate system where:
+- First axis = maximum variance
+- Second axis = next maximum (orthogonal)
+- And so on...
+
+This helps simplify complex datasets while retaining essential structure.
