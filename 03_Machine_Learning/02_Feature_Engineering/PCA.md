@@ -114,3 +114,20 @@ PCA transforms the original features into a new set of features called **Princip
 ##  One-Line Definition
 > PCA transforms high-dimensional data into a lower-dimensional space by creating new features that maximize variance while preserving data structure.
 ```
+###  Summary Flow
+
+```
+Raw Data
+↓
+Standardization
+↓
+Covariance Matrix
+↓
+Eigenvalues & Eigenvectors
+↓
+Select Top k Components
+↓
+Project Data
+↓
+Reduced Dataset
+```
