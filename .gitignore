@@ -1,4 +1,7 @@
+# Python cache files
 __pycache__/
 *.pyc
 *.pyo
 
+# Ignore CSV dataset in your project folder
+dataset/digit-recognizer-test.csv
