@@ -36,3 +36,28 @@ Where:
 
 ---
 
+## 3. Hypothesis Function
+
+General form:
+h(x) = θ0 + θ1x1 + θ2x2 + ... + θnxn
+
+Matrix form:
+h(X) = Xθ
+
+---
+
+## 4. Cost Function (Loss Function)
+
+Mean Squared Error (MSE):
+
+J(θ) = (1/n) * Σ(yi - ŷi)^2
+
+- yi = actual value
+- ŷi = predicted value
+- n = number of samples
+
+Objective:
+Minimize J(θ)
+
+---
+
