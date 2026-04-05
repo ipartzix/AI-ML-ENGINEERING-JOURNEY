@@ -100,3 +100,19 @@ Steps:
 
 ---
 
+## 7. Evaluation Metrics
+
+### 7.1 Mean Absolute Error (MAE)
+MAE = (1/n) * Σ|yi - ŷi|
+
+### 7.2 Mean Squared Error (MSE)
+MSE = (1/n) * Σ(yi - ŷi)^2
+
+### 7.3 Root Mean Squared Error (RMSE)
+RMSE = √MSE
+
+### 7.4 R² Score (Coefficient of Determination)
+R² = 1 - (SS_res / SS_tot)
+
+---
+
