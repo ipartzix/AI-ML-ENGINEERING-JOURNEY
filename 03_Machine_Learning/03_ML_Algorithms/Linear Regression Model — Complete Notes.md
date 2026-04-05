@@ -61,3 +61,42 @@ Minimize J(θ)
 
 ---
 
+## 5. Training Methods
+
+### 5.1 Gradient Descent
+
+Update rule:
+θj = θj - α * (∂J/∂θj)
+
+Where:
+- α = learning rate
+- ∂J/∂θj = gradient
+
+Steps:
+1. Initialize parameters
+2. Compute predictions
+3. Calculate error
+4. Update parameters
+5. Repeat until convergence
+
+---
+
+### 5.2 Normal Equation (Closed Form)
+
+θ = (XᵀX)^(-1) Xᵀy
+
+- No iteration required
+- Computationally expensive for large datasets
+
+---
+
+## 6. Assumptions of Linear Regression
+
+1. Linearity → Relationship between X and y is linear  
+2. Independence → Observations are independent  
+3. Homoscedasticity → Constant variance of errors  
+4. Normality → Errors are normally distributed  
+5. No Multicollinearity → Features are not highly correlated  
+
+---
+
