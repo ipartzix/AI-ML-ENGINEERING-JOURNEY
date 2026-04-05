@@ -116,3 +116,42 @@ R² = 1 - (SS_res / SS_tot)
 
 ---
 
+## 8. Advantages
+
+- Simple and easy to understand  
+- Fast training  
+- Interpretable coefficients  
+- Works well for linear relationships  
+
+---
+
+## 9. Disadvantages
+
+- Cannot model non-linear relationships  
+- Sensitive to outliers  
+- Assumes strict statistical conditions  
+- Poor performance with high multicollinearity  
+
+---
+
+## 10. Regularization in Linear Regression
+
+### 10.1 Ridge Regression (L2 Regularization)
+Adds penalty:
+λ * Σθ²
+
+### 10.2 Lasso Regression (L1 Regularization)
+Adds penalty:
+λ * Σ|θ|
+
+### 10.3 ElasticNet
+Combination of L1 and L2
+
+---
+
+## 11. Feature Engineering Considerations
+
+- Feature scaling (important for gradient descent)
+- Handling missing values
+- Removing multicollinearity
+- Polynomial features for non-linearity
