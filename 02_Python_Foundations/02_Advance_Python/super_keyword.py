@@ -37,18 +37,18 @@ Child class
 ____________
   class SmartPhone(Phone):
     def __init__(self, price):
-        super().__init__(price)   # ✅ Parent constructor (1st statement after the constructor )
+        super().__init__(price)   #  Parent constructor (1st statement after the constructor )
 
     def buy(self):
-        super().show_price()      # ✅ Parent method
+        super().show_price()      #  Parent method
 
 
 
-❌ Access NOT possible (parent attribute)
+ Access NOT possible (parent attribute)
 ____________________________________________
 class SmartPhone(Phone):
     def get_price(self):
-        print(super().__price)   # ❌ ERROR
+        print(super().__price)   #  ERROR
 
 
 if we want to use super keyword we need to use it at the fast statement after the constructor 
