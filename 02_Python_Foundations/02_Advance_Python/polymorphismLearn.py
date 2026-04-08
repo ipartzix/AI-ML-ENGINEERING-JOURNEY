@@ -16,7 +16,7 @@ class SmartPhone(Phone):
         pass
 
 
-s = SmartPhone(100000, "apple", "17 PRO MAX")
+s = SmartPhone(100000, "apple", "18 PRO MAX")
 # print(s)
 s.buy()  # when 2 or more method are available in parent and child both class it always run child class method  it called method overwriting
 print("it is method overriding polymorphism")
