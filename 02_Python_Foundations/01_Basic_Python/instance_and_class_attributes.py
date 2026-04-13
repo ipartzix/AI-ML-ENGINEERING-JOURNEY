@@ -15,6 +15,7 @@ class Employee:
 
 
 e1 = Employee(3400, "John", 3, "Tesla")
+
 print(e1.company) # will always print instance attribute whenever present
 print(Employee.company) # This will always print the class attribute
 
