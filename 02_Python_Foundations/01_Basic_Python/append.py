@@ -4,3 +4,4 @@ f=open("John doe.txt","a")
 string='''\nMaster Python Programming from Scratch: Build Real-World Projects and Become Job-Ready in 2025'''
 f.write(string)
 f.close()
+print("Done")
