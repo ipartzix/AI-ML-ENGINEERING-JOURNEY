@@ -13,6 +13,7 @@ class Employee:
 # Creating an object with arguments
 e1 = Employee(35000, "Shyam", 4)
 
+
 # Accessing method and attributes
 print("Name:", e1.name)
 print("Salary:", e1.get_salary())
