@@ -11,4 +11,5 @@ c2 = 300
 s1 = template.format(a, a1)
 print(s1)
 
+
 print(f"{b} you are awesome and take this {c2}$ bag")
