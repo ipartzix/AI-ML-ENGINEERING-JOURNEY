@@ -6,6 +6,8 @@ def sum(a, b):
     return c
 
 
+
+
 def greet():
     z = 32  # Local variable
     print("Hello")
