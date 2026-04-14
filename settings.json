@@ -2,7 +2,7 @@
   "codeQL.githubDatabase.download": "never",
   "sarif-viewer.connectToGithubCodeScanning": "off",
   "code-runner.executorMap": {
-    "python": "/home/ipartzix/anaconda3/envs/aiml_engineering/bin/python -u"
+    "python": "/home/ipartzix/anaconda3/envs/AIML-Engineering_env/bin/python -u"
   },
   "code-runner.runInTerminal": true
 }
