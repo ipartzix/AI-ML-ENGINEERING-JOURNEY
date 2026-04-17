@@ -1,10 +1,13 @@
 import tensorflow as tf
+
 from tensorflow.keras.layers import Dense, Dropout
+
 from tensorflow.keras.models import Sequential
 
 
 def build_mlp(input_dim, layers=[64, 32], activation='relu', output_dim=1, output_activation='sigmoid'):
     """Build a simple feedforward MLP model."""
+    
     model = Sequential()
     for i, units in enumerate(layers):
         if i == 0:
