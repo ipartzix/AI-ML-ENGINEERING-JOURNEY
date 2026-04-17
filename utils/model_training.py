@@ -13,6 +13,7 @@ def train_model(X, y):
     )
 
     model = LogisticRegression(max_iter=1000)
+    
     model.fit(X_train, y_train)
 
     predictions = model.predict(X_test)
