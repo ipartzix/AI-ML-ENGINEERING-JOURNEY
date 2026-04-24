@@ -14,4 +14,4 @@ def setup_logger(log_file: str = "app.log"):
 
 
 def print_separator():
-    print("= - utils.py:17" * 50)
+    print("=" * 50)
