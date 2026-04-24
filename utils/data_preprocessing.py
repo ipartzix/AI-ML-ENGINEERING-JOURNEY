@@ -15,15 +15,44 @@ def encode_labels(df, column):
     return df, le
 
 
-def scale_features(X, method='standard'):
-    """Scale features using StandardScaler or MinMaxScaler."""
+def _build_scaler(method='standard'):
     if method == 'standard':
-        scaler = StandardScaler()
+        return StandardScaler()
     elif method == 'minmax':
-        scaler = MinMaxScaler()
+        return MinMaxScaler()
     else:
         raise ValueError("method must be 'standard' or 'minmax'")
-    X_scaled = scaler.fit_transform(X)
+
+
+def fit_scaler(X_train, method='standard'):
+    """Fit a scaler on training features only."""
+    scaler = _build_scaler(method)
+    scaler.fit(X_train)
+    return scaler
+
+
+def transform_features(X, scaler):
+    """Transform features using a pre-fitted scaler."""
+    return scaler.transform(X)
+
+
+def scale_train_test(X_train, X_test, method='standard'):
+    """Scale train/test without leakage (fit on train, transform both)."""
+    scaler = fit_scaler(X_train, method=method)
+    X_train_scaled = transform_features(X_train, scaler)
+    X_test_scaled = transform_features(X_test, scaler)
+    return X_train_scaled, X_test_scaled, scaler
+
+
+def scale_features(X, method='standard'):
+    """
+    Backward-compatible helper that fits and transforms a single dataset.
+
+    Note:
+        Use `scale_train_test` after splitting to avoid train-test leakage.
+    """
+    scaler = fit_scaler(X, method=method)
+    X_scaled = transform_features(X, scaler)
     return X_scaled, scaler
 
 

@@ -7,10 +7,15 @@ def handle_missing_values(df: pd.DataFrame) -> pd.DataFrame:
     and categorical with mode.
     """
     for col in df.columns:
-        if df[col].dtype == "object":
-            df[col].fillna(df[col].mode()[0], inplace=True)
+        series = df[col]
+        if series.dtype == "object":
+            mode_values = series.mode(dropna=True)
+            fill_value = mode_values.iloc[0] if not mode_values.empty else "Unknown"
+            df[col] = series.fillna(fill_value)
         else:
-            df[col].fillna(df[col].median(), inplace=True)
+            non_null_values = series.dropna()
+            fill_value = non_null_values.median() if not non_null_values.empty else 0
+            df[col] = series.fillna(fill_value)
     return df
 
 
