@@ -41,13 +41,71 @@ ai-ml-engineering-journey/
 │
 ├── 03_Machine_Learning/
 │ # Purpose: Classical ML with theory + from-scratch implementations.
-│ ├── Machine_Learning_Fundamentals/
-│ ├── Feature_Engineering/
-│ ├── Scikit_Learn/ 
-│ ├── Supervised_Learning/
-│ ├── Unsupervised_Learning/
-│ └── ML_Engineering/
+│ ├── 01_Machine_Learning_Fundamentals/
+│ ├── 02_Feature_Engineering/
+│ ├── 03_Scikit_Learn/ 
+| ├── 04_Core_Algorithms/
+│   ├── 01_Linear_Models/
+│   ├── 02_Classification/│
+│   ├── 03_Probabilistic/
+│   ├── 04_Tree_Based/
+│   ├── 05_SVM/
+│   ├── 06_Clustering/
+│   ├── 07_Dimensionality_Reduction/
+│   ├── 08_Ensemble_Basics/
+|
+| ├── 05_Advanced_ML_Algorithms/
+│   ├── Boosting/
+│   ├── Advanced_SVM/
+│   ├── Probabilistic_Advanced/
+│   ├── Advanced_Dimensionality_Reduction/
+│   ├── Anomaly_Detection/
+│   ├── Recommendation_Systems/
+|
+├── 05_Advanced_ML_Concepts/
 │
+│   ├── Hyperparameter_Optimization/
+│   │   ├── Grid_Search.md
+│   │   ├── Random_Search.md
+│   │   ├── Bayesian_Optimization.md
+│
+│   ├── Model_Evaluation_Validation/
+│   │   ├── Cross_Validation.md
+│   │   ├── Stratified_Sampling.md
+│   │   ├── TimeSeries_Split.md
+│   │   ├── Nested_CV.md
+│
+│   ├── Imbalanced_Data_Handling/
+│   │   ├── SMOTE.md
+│   │   ├── Class_Weights.md
+│   │   ├── Threshold_Tuning.md
+│
+│   ├── Ensemble_Theory/
+│   │   ├── Bagging_vs_Boosting.md
+│   │   ├── Stacking.md
+│   │   ├── Blending.md
+│   │   ├── Voting.md
+│
+│   ├── Interpretability/
+│   │   ├── Feature_Importance.md
+│   │   ├── SHAP.md
+│   │   ├── LIME.md
+│   │   ├── PDP.md
+│
+│   ├── Model_Selection/
+│   │   ├── Bias_Variance_Decision.md
+│   │   ├── Metric_Selection.md
+│   │   ├── Statistical_Testing.md
+│
+│   ├── Scaling_ML/
+│   │   ├── Large_Data_Training.md
+│   │   ├── Online_Learning.md
+│   │   ├── Distributed_Training.md
+│   │   ├── Memory_vs_Compute.md
+│
+├── 06_Model_Evaluation_&_Optimization
+|   |   ├──Model_Evaluation
+|   |   ├──Model_Optimization
 ├── 04_Deep_Learning/
 │ # Purpose: Neural networks and optimization fundamentals.
 │ ├── Neural_Networks_From_Scratch/
