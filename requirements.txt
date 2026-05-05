@@ -103,9 +103,11 @@ ai-ml-engineering-journey/
 │   │   ├── Distributed_Training.md
 │   │   ├── Memory_vs_Compute.md
 │
-├── 06_Model_Evaluation_&_Optimization
-|   |   ├──Model_Evaluation
-|   |   ├──Model_Optimization
+├── 07_Model_Evaluation_&_Optimization
+|      ├──Model_Evaluation_matrix
+├── 08_Optimization
+|      ├──Gradient_Descent
+|
 ├── 04_Deep_Learning/
 │ # Purpose: Neural networks and optimization fundamentals.
 │ ├── Neural_Networks_From_Scratch/
