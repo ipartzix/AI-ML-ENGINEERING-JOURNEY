@@ -45,24 +45,98 @@ ai-ml-engineering-journey/
 │ ├── 02_Feature_Engineering/
 │ ├── 03_Scikit_Learn/ 
 | ├── 04_Core_Algorithms/
-│   ├── 01_Linear_Models/
-│   ├── 02_Classification/│
-│   ├── 03_Probabilistic/
-│   ├── 04_Tree_Based/
-│   ├── 05_SVM/
-│   ├── 06_Clustering/
-│   ├── 07_Dimensionality_Reduction/
-│   ├── 08_Ensemble_Basics/
-|
-| ├── 05_Advanced_ML_Algorithms/
+│   ├── 01_Supervised_Learning/
+│   │   ├── 01_Linear_Models/
+│   │   │   ├── Linear_Regression/
+│   │   │   ├── Ridge_Regression/
+│   │   │   ├── Lasso_Regression/
+│   │   │   ├── ElasticNet/
+│   │   │
+│   │   ├── 02_Classification/
+│   │   │   ├── Logistic_Regression/
+│   │   │   ├── KNN/
+│   │   │   ├── Naive_Bayes/
+│   │   │
+│   │   ├── 03_Probabilistic/
+│   │   │   ├── Bayesian_Models/
+│   │   │   ├── Gaussian_Naive_Bayes/
+│   │   │
+│   │   ├── 04_Tree_Based/
+│   │   │   ├── Decision_Tree/
+│   │   │   ├── Random_Forest/
+│   │   │
+│   │   ├── 05_SVM/
+│   │   │   ├── Linear_SVM/
+│   │   │   ├── Kernel_SVM/
+│   │   │
+│   │   ├── 06_Ensemble_Basics/
+│   │       ├── Bagging/
+│   │       ├── Voting/
+│
+│   ├── 02_Unsupervised_Learning/
+│   │   ├── 01_Clustering/
+│   │   │   ├── KMeans/
+│   │   │   ├── Hierarchical/
+│   │   │   ├── DBSCAN/
+│   │   │
+│   │   ├── 02_Dimensionality_Reduction/
+│   │   │   ├── PCA/
+│   │   │   ├── tSNE/
+│   │   │   ├── UMAP/
+│   │   │
+│   │   ├── 03_Anomaly_Detection/
+│   │       ├── Isolation_Forest/
+│   │       ├── OneClass_SVM/
+│
+│   ├── 03_Reinforcement_Learning/
+│       ├── Fundamentals/
+│       │   ├── Agent_Environment/
+│       │   ├── Reward_System/
+│       │   ├── Markov_Decision_Process/
+│       │
+│       ├── Value_Based/
+│       │   ├── Q_Learning/
+│       │   ├── Deep_Q_Network/
+│       │
+│       ├── Policy_Based/
+│       │   ├── Policy_Gradient/
+│       │   ├── REINFORCE/
+│       │
+│       ├── Actor_Critic/
+│           ├── A2C/
+│           ├── PPO/
+│
+├── 05_Advanced_ML_Algorithms/
+│
 │   ├── Boosting/
+│   │   ├── AdaBoost/
+│   │   ├── Gradient_Boosting/
+│   │   ├── XGBoost/
+│   │   ├── LightGBM/
+│   │   ├── CatBoost/
+│
 │   ├── Advanced_SVM/
+│   │   ├── Soft_Margin/
+│   │   ├── Kernel_Tricks/
+│
 │   ├── Probabilistic_Advanced/
+│   │   ├── Hidden_Markov_Model/
+│   │   ├── Bayesian_Network/
+│
 │   ├── Advanced_Dimensionality_Reduction/
+│   │   ├── Autoencoders/
+│   │   ├── Manifold_Learning/
+│
 │   ├── Anomaly_Detection/
+│   │   ├── LOF/
+│   │   ├── Autoencoder_Anomaly/
+│
 │   ├── Recommendation_Systems/
-|
-├── 05_Advanced_ML_Concepts/
+│       ├── Collaborative_Filtering/
+│       ├── Content_Based/
+│       ├── Matrix_Factorization/
+│
+├── 06_Advanced_ML_Concepts/
 │
 │   ├── Hyperparameter_Optimization/
 │   │   ├── Grid_Search.md
@@ -98,15 +172,51 @@ ai-ml-engineering-journey/
 │   │   ├── Statistical_Testing.md
 │
 │   ├── Scaling_ML/
-│   │   ├── Large_Data_Training.md
-│   │   ├── Online_Learning.md
-│   │   ├── Distributed_Training.md
-│   │   ├── Memory_vs_Compute.md
+│       ├── Large_Data_Training.md
+│       ├── Online_Learning.md
+│       ├── Distributed_Training.md
+│       ├── Memory_vs_Compute.md
 │
-├── 07_Model_Evaluation_&_Optimization
-|      ├──Model_Evaluation_matrix
-├── 08_Optimization
-|      ├──Gradient_Descent
+├── 07_Model_Evaluation_Optimization/
+│
+│   ├── Regression_Metrics/
+│   │   ├── MAE.md
+│   │   ├── MSE.md
+│   │   ├── RMSE.md
+│   │   ├── R2_Score.md
+│   │   ├── Adjusted_R2.md
+│
+│   ├── Classification_Metrics/
+│   │   ├── Accuracy.md
+│   │   ├── Precision.md
+│   │   ├── Recall.md
+│   │   ├── F1_Score.md
+│   │   ├── ROC_AUC.md
+│   │   ├── Confusion_Matrix.md
+│
+│   ├── Validation_Techniques/
+│       ├── Train_Test_Split.md
+│       ├── Cross_Validation.md
+│       ├── KFold.md
+│       ├── Stratified_KFold.md
+│
+├── 08_Optimization/
+│
+│   ├── Gradient_Descent/
+│   │   ├── Batch_Gradient_Descent.md
+│   │   ├── Stochastic_Gradient_Descent.md
+│   │   ├── MiniBatch_Gradient_Descent.md
+│
+│   ├── Optimization_Algorithms/
+│   │   ├── Momentum.md
+│   │   ├── AdaGrad.md
+│   │   ├── RMSProp.md
+│   │   ├── Adam.md
+│
+│   ├── Regularization/
+│       ├── Ridge.md
+│       ├── Lasso.md
+│       ├── ElasticNet.md
 |
 ├── 04_Deep_Learning/
 │ # Purpose: Neural networks and optimization fundamentals.
