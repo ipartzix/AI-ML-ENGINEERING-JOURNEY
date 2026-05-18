@@ -1,9 +1,9 @@
-# 📚 Library Management System (Python)
+#  Library Management System (Python)
 
 A modular, OOP-based Library Management System designed to handle book inventories, member registrations, and
 transaction workflows. This project demonstrates clean code principles and efficient data handling.
 
-## 📁 Project Structure
+##  Project Structure
 
 * `book.py`: Defines the `Book` class (attributes like ISBN, Title, Author).
 * `member.py`: Defines the `Member` class and borrowing limits.
