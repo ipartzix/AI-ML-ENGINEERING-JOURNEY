@@ -11,19 +11,19 @@ transaction workflows. This project demonstrates clean code principles and effic
 * `books_data.py`: The central inventory (Dictionary-based Data Store).
 * `main.py`: The entry point for the command-line interface (CLI).
 
-## ✨ Features
+##  Features
 
 * **Inventory Tracking:** Add, remove, and update book records.
 * **Member Management:** Register new members and track their borrowing history.
 * **Issue/Return System:** Logic to check book availability before issuing.
 * **Search Engine:** Search books by title or author with optimized filtering.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Language:** Python 3.x
 * **Concepts used:** Encapsulation, Inheritance, List Comprehensions, and File I/O (if applicable).
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
