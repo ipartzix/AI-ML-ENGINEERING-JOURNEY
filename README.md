@@ -233,8 +233,6 @@ Transitioned from theoretical foundations to practical dataset handling, explora
 establishing the groundwork for structured machine learning workflows.
 
 ---
----
-
 ## March Progress — Machine Learning Foundations & First Model
 
 March was focused on strengthening Machine Learning fundamentals while taking the first step into real model building, alongside managing semester academics.
@@ -303,6 +301,80 @@ This project helped me understand:
 Transitioned from theoretical ML understanding to practical model building and workflow implementation while maintaining consistency under academic constraints.
 
 ---
+## April Progress — Optimization & Mathematical Understanding
+
+April focused more on understanding how Machine Learning algorithms work internally rather than only applying models.
+
+After building the first ML project in March, attention shifted toward optimization, mathematical foundations, and model behavior while continuing DSA and semester academics.
+
+### What I Focused On
+
+### Optimization Algorithms
+
+Studied **Gradient Descent** in depth:
+
+- Batch Gradient Descent
+- Stochastic Gradient Descent (SGD)
+- Mini-batch Gradient Descent
+
+Focus:
+- Understanding how models learn
+- Weight updates during training
+- Optimization behavior over iterations
+
+### Dimensionality Reduction
+
+Studied **Principal Component Analysis (PCA)**:
+
+- Dimensionality reduction concepts
+- Preserving important information from high-dimensional datasets
+- Understanding variance and feature compression
+
+### Regression Evaluation Metrics
+
+Worked on understanding regression metrics including:
+
+- MAE (Mean Absolute Error)
+- MSE (Mean Squared Error)
+- RMSE (Root Mean Squared Error)
+
+Focus:
+- Understanding when and why each metric is used
+- Importance of evaluation beyond simple accuracy
+
+### Mathematical Foundations
+
+- Strengthened matrix operation fundamentals
+- Improved understanding of how data transformations occur internally inside ML algorithms
+
+### Algorithmic Thinking
+
+- Continued DSA practice in Python for long-term interview preparation
+
+### Workflow & Experimentation
+
+- Continued using **Jupyter Notebook** for experiments and structured learning tracking
+
+---
+
+### Key Takeaways
+
+- Machine Learning is heavily dependent on mathematics and optimization
+- Gradient Descent improved understanding of how models iteratively improve
+- PCA demonstrated the importance of handling high-dimensional data efficiently
+- Evaluation metrics are critical for understanding real model performance
+
+---
+
+### Next Steps
+
+- Implement Gradient Descent from scratch
+- Apply PCA on real-world datasets
+- Begin hyperparameter tuning
+- Build 1–2 structured ML projects
+- Continue DSA alongside ML preparation
+
+**Outcome:**  Developed stronger intuition for optimization, dimensionality reduction, and mathematical foundations behind Machine Learning systems.
 
 ---
 
