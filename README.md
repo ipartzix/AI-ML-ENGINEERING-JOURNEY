@@ -233,6 +233,79 @@ Transitioned from theoretical foundations to practical dataset handling, explora
 establishing the groundwork for structured machine learning workflows.
 
 ---
+---
+
+## March Progress — Machine Learning Foundations & First Model
+
+March was focused on strengthening Machine Learning fundamentals while taking the first step into real model building, alongside managing semester academics.
+
+After working with data handling and EDA in February, this month focused more on feature engineering concepts and practical ML implementation.
+
+### What I Worked On
+
+### Feature Engineering
+Continued studying feature engineering concepts including:
+
+- Feature construction
+- Feature splitting
+- Understanding the curse of dimensionality
+- Improving intuition behind preprocessing decisions
+
+### Machine Learning Foundations
+- Strengthened core ML concepts alongside implementation
+- Improved understanding of how preprocessing impacts model performance
+
+### Algorithmic Thinking
+- Continued **DSA in Python** for long-term interview preparation
+
+### Workflow & Experimentation
+- Maintained experimentation workflow using **Jupyter Notebook**
+
+---
+
+### Practical Milestone — Student Pass/Fail Prediction Model
+
+Built a basic Machine Learning classification project using **Random Forest**.
+
+#### Project Details
+
+- Dataset Size: ~200 student records
+- Features:
+  - Attendance
+  - Previous Marks
+  - Study Hours
+
+#### Result
+
+- Achieved approximately **85% accuracy**
+
+### Key Learnings
+
+This project helped me understand:
+
+- End-to-end ML workflow
+- Data preprocessing and feature preparation
+- Model training and evaluation
+- Importance of feature quality over only model selection
+
+---
+
+### Next Steps
+
+- Improve the model using:
+  - Hyperparameter tuning
+  - Feature selection
+- Start building structured ML pipelines using **Scikit-learn**
+- Work on 1–2 additional real-world ML projects
+- Continue DSA alongside ML preparation
+
+**Outcome:**  
+Transitioned from theoretical ML understanding to practical model building and workflow implementation while maintaining consistency under academic constraints.
+
+---
+
+---
+
 ## Current Status
 
 - Actively maintained  
