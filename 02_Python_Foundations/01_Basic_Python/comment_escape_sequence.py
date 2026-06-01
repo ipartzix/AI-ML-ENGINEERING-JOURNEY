@@ -13,9 +13,7 @@ print("this is the topic where we can see comments and escape sequence")
 #  \' =single quote
 
 print("hello guys this is IPARTZIX\nWelcome the world of experiment")
-
 print("hello guys this is IPARTZIX\tWelcome the world of experiment")
-
 print("hello guys this is IPARTZIX \\ Welcome the world of experiment")
 print("hello guys this is IPARTZIX\" Welcome the world of experiment")
 print("hello guys this is IPARTZIX\' Welcome the world of experiment")
