@@ -45,12 +45,6 @@ class Atm:
 
 
 
-
-
-
-
-
-
     # one method can not access with another method directly they take help of object
     # so for every method self do this job the object is pass through self and without self the code show error
 
