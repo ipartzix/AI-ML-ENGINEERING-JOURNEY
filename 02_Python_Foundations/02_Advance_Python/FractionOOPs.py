@@ -43,7 +43,6 @@ class Fraction:
         temp_den = self.den * other.num
         return "{}/{}".format(temp_num, temp_den)
 
-
 # Creating Fraction objects
 x = Fraction(3, 4)
 y = Fraction(5, 6)
