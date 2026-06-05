@@ -3,22 +3,16 @@
 # for i in range(num):
 #     print("Hello World")
 
-
-
-
 #Q. Print natural number upto n
 # num =int(input("Enter a number: "))
 # for i in range(1,num+1):
 #     print(i)
 
 
-
-
 #Q.Reverse a loop from n to 1
 # num =int(input("Enter a number: "))
 # for i in range(num,0,-1):
 #     print(i)
-
 
 
 #Q take a number and print its multiplication table
