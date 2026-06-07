@@ -1,8 +1,10 @@
 def ipartzix():
+
     print(""" LinkedIn Profile Summary: Partha Paul (@ipartzix)
  Current Status:
 3rd-year B.Tech CSE student (MAKAUT, 2023–2027)
 
+          
 Studying at Global Institute of Management & Technology, Krishnagar
 
  Career Goals:
@@ -10,6 +12,7 @@ To become a real Core Computer Science Engineer
 
 Targeting ₹15–30+ LPA roles in SDE or AI/ML domains at top MNCs like Google, Microsoft, Amazon
 
+          
 Aims to build innovative, system-level projects using DSA, AI/ML, and IoT
  Profile Highlights:
 Headline: Shows interest in AI/ML, Software Development, IoT, and problem solving
@@ -18,6 +21,7 @@ Certifications:
 Microsoft Certified in AI/ML (Azure AI Fundamentals)
 Udemy certifications on relevant topics
 Skills Added: Python, C
+          
 Custom LinkedIn URL: linkedin.com/in/ipartzix (Good branding)
  Missing or Needs Improvement:
 Section	Status	Action Needed
@@ -29,6 +33,7 @@ Featured	Good start	Add resume and GitHub profile
 Activity	Active	Keep posting learning.py progress & projects
 Internship Preference	Not marked	Use “Open to Work” with internship tag
  Personal Branding Summary:
+          
 Partha Paul is a goal-oriented, hardworking, and high-dreaming CSE student, 
 focusing on DSA in C, AI/ML, and system-level development.
 He is actively building his technical foundation through certifications,
