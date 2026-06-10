@@ -108,3 +108,36 @@ This function measures prediction error.
 
 ---
 
+## Advantages
+
+* Simple and easy to implement
+* Fast training process
+* Works well for binary classification
+* Provides probability estimates
+* Interpretable results
+
+---
+
+## Disadvantages
+
+* Assumes a linear relationship between features and log-odds
+* Sensitive to outliers
+* Not suitable for highly complex datasets
+* Performance decreases with many irrelevant features
+
+---
+
+## Applications
+
+* Spam Email Detection
+* Medical Diagnosis
+* Credit Risk Analysis
+* Customer Churn Prediction
+* Fraud Detection
+* Sentiment Analysis
+
+---
+
+## Summary
+
+Logistic Regression is a classification algorithm that uses the Sigmoid Function to predict probabilities between 0 and 1. It is widely used for binary classification tasks because it is simple, efficient, and easy to interpret.
