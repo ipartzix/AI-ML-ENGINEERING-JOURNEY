@@ -127,6 +127,7 @@ This function measures prediction error.
 
 ---
 
+
 ## Applications
 
 * Spam Email Detection
