@@ -1,6 +1,5 @@
 # Logistic Regression
 
-
 ## Introduction
 
 Logistic Regression is a supervised machine learning algorithm used for **classification problems**. It predicts the probability that an input belongs to a particular class.
@@ -127,7 +126,6 @@ This function measures prediction error.
 * Performance decreases with many irrelevant features
 
 ---
-
 
 ## Applications
 
