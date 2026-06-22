@@ -32,3 +32,32 @@ Where:
 z = w_1x_1 + w_2x_2 + ... + w_nx_n + b
 ]
 
+### Properties
+
+* Output range: 0 to 1
+* Produces probability values
+* S-shaped curve
+
+---
+
+## Working of Logistic Regression
+
+### Step 1: Calculate Linear Combination
+
+[
+z = wx + b
+]
+
+### Step 2: Apply Sigmoid Function
+
+[
+P(Y=1) = \frac{1}{1 + e^{-z}}
+]
+
+### Step 3: Make Prediction
+
+* If probability ≥ 0.5 → Class 1
+* If probability < 0.5 → Class 0
+
+---
+
