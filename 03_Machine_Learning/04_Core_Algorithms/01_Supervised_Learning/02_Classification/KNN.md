@@ -61,3 +61,32 @@ P(Y=1) = \frac{1}{1 + e^{-z}}
 
 ---
 
+## Types of Logistic Regression
+
+### 1. Binary Logistic Regression
+
+Used when there are only two classes.
+
+Examples:
+
+* Pass/Fail
+* Yes/No
+
+### 2. Multinomial Logistic Regression
+
+Used for more than two classes.
+
+Examples:
+
+* Red, Green, Blue
+
+### 3. Ordinal Logistic Regression
+
+Used when classes have an order.
+
+Examples:
+
+* Low, Medium, High
+
+---
+
