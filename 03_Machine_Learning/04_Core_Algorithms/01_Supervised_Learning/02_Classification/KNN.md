@@ -127,7 +127,6 @@ This function measures prediction error.
 
 ---
 
-
 ## Applications
 
 * Spam Email Detection
@@ -140,5 +139,6 @@ This function measures prediction error.
 ---
 
 ## Summary
+
 
 Logistic Regression is a classification algorithm that uses the Sigmoid Function to predict probabilities between 0 and 1. It is widely used for binary classification tasks because it is simple, efficient, and easy to interpret.
