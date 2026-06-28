@@ -94,7 +94,7 @@ Examples:
 
 Logistic Regression uses **Log Loss (Cross-Entropy Loss)**:
 
-[
+```[
 J(\theta) = -\frac{1}{m}
 \sum
 \left[
@@ -103,7 +103,7 @@ y\log(h_\theta(x))
 (1-y)\log(1-h_\theta(x))
 \right]
 ]
-
+```
 This function measures prediction error.
 
 ---
