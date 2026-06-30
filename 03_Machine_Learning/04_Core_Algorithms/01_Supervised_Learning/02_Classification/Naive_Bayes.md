@@ -10,4 +10,27 @@ It is called **"Naive"** because it assumes that all features are **independent*
 
 ---
 
-#
+# Bayes' Theorem
+
+[
+P(C|X)=\frac{P(X|C)\times P(C)}{P(X)}
+]
+
+### Meaning
+
+* **P(C|X)** → Posterior Probability (Probability of class after seeing data)
+* **P(X|C)** → Likelihood (Probability of data given the class)
+* **P(C)** → Prior Probability (Initial probability of the class)
+* **P(X)** → Evidence (Probability of the data)
+
+---
+
+# Working Steps
+
+1. Collect training data.
+2. Calculate prior probability of each class.
+3. Calculate likelihood of each feature.
+4. Apply Bayes' theorem.
+5. Choose the class with the highest probability.
+
+---
