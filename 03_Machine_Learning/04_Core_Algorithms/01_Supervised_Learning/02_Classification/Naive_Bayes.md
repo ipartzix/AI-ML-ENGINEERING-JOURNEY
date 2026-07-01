@@ -34,3 +34,22 @@ P(C|X)=\frac{P(X|C)\times P(C)}{P(X)}
 5. Choose the class with the highest probability.
 
 ---
+
+# Example
+
+Email Classification
+
+Input:
+
+* Contains "Win"
+* Contains "Prize"
+
+Output:
+
+* Spam
+* Not Spam
+
+Naive Bayes calculates the probability of both classes and predicts the one with the higher probability.
+
+---
+
