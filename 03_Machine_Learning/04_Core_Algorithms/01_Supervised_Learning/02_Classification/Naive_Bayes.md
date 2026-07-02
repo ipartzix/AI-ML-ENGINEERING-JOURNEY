@@ -53,3 +53,22 @@ Naive Bayes calculates the probability of both classes and predicts the one with
 
 ---
 
+# Types of Naive Bayes
+
+### 1. Gaussian Naive Bayes
+
+* Used for continuous numerical data.
+* Example: Height, Weight, Temperature
+
+### 2. Multinomial Naive Bayes
+
+* Used for count/frequency data.
+* Example: Word count in text classification.
+
+### 3. Bernoulli Naive Bayes
+
+* Used for binary data (0/1, Yes/No).
+* Example: Word present or absent.
+
+---
+
