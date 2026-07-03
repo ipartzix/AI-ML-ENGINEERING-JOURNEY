@@ -72,3 +72,33 @@ Naive Bayes calculates the probability of both classes and predicts the one with
 
 ---
 
+# Advantages
+
+* Simple and fast
+* Easy to implement
+* Works well on small datasets
+* Good for text classification
+* Handles multiple classes
+* Less training data required
+
+---
+
+# Disadvantages
+
+* Assumes feature independence
+* Accuracy decreases if features are highly related
+* Zero-frequency problem (solved using Laplace Smoothing)
+
+---
+
+# Applications
+
+* Email Spam Detection
+* Sentiment Analysis
+* Document Classification
+* Medical Diagnosis
+* Recommendation Systems
+* News Classification
+
+---
+
