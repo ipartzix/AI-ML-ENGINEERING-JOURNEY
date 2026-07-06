@@ -118,3 +118,36 @@ Naive Bayes calculates the probability of both classes and predicts the one with
 **Naive Bayes** is a supervised classification algorithm based on Bayes' Theorem that assumes all input features are independent and predicts the class with the highest probability.
 
 ---
+# Viva Questions
+
+### What is Naive Bayes?
+
+A supervised classification algorithm based on Bayes' Theorem.
+
+### Why is it called "Naive"?
+
+Because it assumes all features are independent.
+
+### Is Naive Bayes supervised or unsupervised?
+
+Supervised.
+
+### Main use?
+
+Classification.
+
+### Which theorem is used?
+
+Bayes' Theorem.
+
+### Types?
+
+* Gaussian
+* Multinomial
+* Bernoulli
+
+### One real-life application?
+
+Spam email detection.
+
+---
