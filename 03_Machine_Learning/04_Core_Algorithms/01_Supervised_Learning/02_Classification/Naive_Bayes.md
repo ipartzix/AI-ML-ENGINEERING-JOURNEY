@@ -151,3 +151,11 @@ Bayes' Theorem.
 Spam email detection.
 
 ---
+# One-Line Revision
+
+* Algorithm: Supervised Classification
+* Based on: Bayes' Theorem
+* Assumption: Features are Independent
+* Output: Predicted Class
+* Best For: Text Classification & Spam Detection
+* Types: Gaussian, Multinomial, Bernoulli
