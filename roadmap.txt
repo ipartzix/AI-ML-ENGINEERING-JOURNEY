@@ -270,6 +270,3 @@ ai-ml-engineering-journey/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-matplotlib~=3.10.8
-numpy~=2.4.0
-requests~=2.32.5
