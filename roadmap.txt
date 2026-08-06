@@ -177,16 +177,16 @@ ai-ml-engineering-journey/
 │       ├── Distributed_Training.md
 │       ├── Memory_vs_Compute.md
 │
-├── 07_Model_Evaluation_Optimization/
+├── 07_Model_Evaluation_Validation/
 │
-│   ├── Regression_Metrics/
-│   │   ├── MAE.md
-│   │   ├── MSE.md
-│   │   ├── RMSE.md
-│   │   ├── R2_Score.md
-│   │   ├── Adjusted_R2.md
+│   ├── 01_Regression_Metrics/
+│   │   ├── 01_MAE.md
+│   │   ├── 02_MSE.md
+│   │   ├── 03_RMSE.md
+│   │   ├── 04_R2_Score.md
+│   │   ├── 05_Adjusted_R2.md
 │
-│   ├── Classification_Metrics/
+│   ├── 02_Classification_Metrics/
 │   │   ├── Accuracy.md
 │   │   ├── Precision.md
 │   │   ├── Recall.md
@@ -194,7 +194,7 @@ ai-ml-engineering-journey/
 │   │   ├── ROC_AUC.md
 │   │   ├── Confusion_Matrix.md
 │
-│   ├── Validation_Techniques/
+│   ├── 03_Validation_Techniques/
 │       ├── Train_Test_Split.md
 │       ├── Cross_Validation.md
 │       ├── KFold.md
