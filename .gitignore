@@ -3,5 +3,8 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Ignore CSV dataset in your project folder
+# Ignore CSV dataset
 dataset/digit-recognizer-test.csv
+
+# Ignore VS Code settings
+.vscode/settings.json
