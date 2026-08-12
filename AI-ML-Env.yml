@@ -1,0 +1,13 @@
+name: AI-ML-Env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - jupyter
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - plotly
+prefix: C:\Users\ipartzix\miniconda3\envs\AI-ML-Env
