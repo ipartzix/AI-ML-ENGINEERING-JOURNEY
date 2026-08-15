@@ -55,12 +55,17 @@ ai-ml-engineering-journey/
 │   │   ├── 02_Classification/
 │   │   │   ├── Logistic_Regression/
 │   │   │   ├── KNN/
-│   │   │   ├── Naive_Bayes/
+│   │   │   Naive_Bayes/
+|   |   |       ├── Gaussian_Naive_Bayes/
+|   |   |       ├── Multinomial_Naive_Bayes/
+|   |   |       └── Bernoulli_Naive_Bayes/
 │   │   │
-│   │   ├── 03_Probabilistic/
-│   │   │   ├── Bayesian_Models/
-│   │   │   ├── Gaussian_Naive_Bayes/
-│   │   │
+│   │   ├── 3_Probabilistic_Models/
+|   |   |       ├── Probability_Fundamentals/
+|   |   |       ├── Bayes_Theorem/
+|   |   |       ├── Bayesian_Models/
+|   |   |       └── Probability_Distributions/
+|   |   |
 │   │   ├── 04_Tree_Based/
 │   │   │   ├── Decision_Tree/
 │   │   │   ├── Random_Forest/
