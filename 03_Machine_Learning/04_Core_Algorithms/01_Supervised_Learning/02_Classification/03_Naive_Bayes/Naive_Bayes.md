@@ -117,38 +117,12 @@ Naive Bayes calculates the probability of both classes and predicts the one with
 
 **Naive Bayes** is a supervised classification algorithm based on Bayes' Theorem that assumes all input features are independent and predicts the class with the highest probability.
 
----
-# Viva Questions
-
-### What is Naive Bayes?
-
-A supervised classification algorithm based on Bayes' Theorem.
-
-### Why is it called "Naive"?
-
-Because it assumes all features are independent.
-
-### Is Naive Bayes supervised or unsupervised?
-
-Supervised.
-
-### Main use?
-
-Classification.
-
-### Which theorem is used?
-
-Bayes' Theorem.
-
-### Types?
+--- 
+### Types
 
 * Gaussian
 * Multinomial
 * Bernoulli
-
-### One real-life application?
-
-Spam email detection.
 
 ---
 # One-Line Revision
@@ -237,3 +211,18 @@ Spam email detection.
 | **Key Metric** | Mean & Variance ($\mu, \sigma^2$) | Feature Frequencies / Counts | Presence or Absence |
 | **Penalizes Absence?** | N/A | No | Yes |
 | **Primary Domain** | Sensor / Scientific Data | Document & Text Mining | Short Text & Binary Surveys |
+
+--- 
+# One-Line Revision
+
+* Algorithm: Supervised Classification
+* Based on: Bayes' Theorem
+* Assumption: Features are Independent
+* Output: Predicted Class
+* Best For: Text Classification & Spam Detection
+* Types: Gaussian, Multinomial, Bernoulli
+
+
+### One real-life application
+
+Spam email detection.
