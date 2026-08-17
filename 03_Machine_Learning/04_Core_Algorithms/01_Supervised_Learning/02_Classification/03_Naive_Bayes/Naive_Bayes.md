@@ -1,5 +1,3 @@
-# Naive Bayes - Complete Notes
-
 # Naive Bayes
 
 ## Definition
