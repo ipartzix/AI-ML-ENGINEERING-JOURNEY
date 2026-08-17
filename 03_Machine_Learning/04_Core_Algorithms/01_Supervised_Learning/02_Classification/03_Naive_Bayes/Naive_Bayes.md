@@ -200,6 +200,7 @@ Naive Bayes calculates the probability of both classes and predicts the one with
   * Detection of specific binary traits (e.g., check-list responses: Has Fever = 1, Has Cough = 0).
 
 ---
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/6a1b6f00-a890-493c-9422-fa599ac1dd9e" />
 
 # Summary Comparison
 
