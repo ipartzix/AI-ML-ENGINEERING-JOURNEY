@@ -356,7 +356,7 @@ Focus:
 - Continued using **Jupyter Notebook** for experiments and structured learning tracking
 
 ---
-## May Progress Update | AI/ML Engineering Journey
+## May Progress — Data Foundations, Machine Learning & Problem Solving
 
 May was focused on strengthening my foundations in both Database Management Systems, Machine Learning, and Data Structures & Algorithms (DSA). My goal this month was to build a deeper understanding of the fundamentals that power modern software and AI systems.
 
@@ -420,6 +420,35 @@ May was focused on strengthening my foundations in both Database Management Syst
 - Continue DSA alongside ML preparation
 
 **Outcome:**  Developed stronger intuition for optimization, dimensionality reduction, and mathematical foundations behind Machine Learning systems.
+
+---
+
+## June Progress — Consistency, Classification & Core ML
+
+June wasn't as productive as I had planned, and honestly, I'm okay with that.
+
+Most of my time went into preparing for my 6th semester exams, so I couldn't spend as much time on AI/ML as I usually do. There were days when I couldn't study at all, but whenever I got some free time, I made sure to keep learning.
+
+## What I learned this month:
+
+• Revised Linear Regression to strengthen my understanding
+
+• Learned Logistic Regression
+→ Understanding how machine learning models solve classification problems
+
+• Explored K-Nearest Neighbors (KNN)
+→ Learning how predictions are made based on the nearest data points
+
+• Continued learning MySQL
+→ Practiced SQL queries, joins, and worked on improving my database fundamentals
+
+## I realized
+
+This month reminded me that not every month has to be filled with projects or big achievements. Sometimes, your priority is something else, and that's completely fine. What matters is that you don't stop learning.
+
+Now that my semester exams are over, I'm looking forward to getting back to building projects, learning more ML algorithms, and staying consistent with my AI/ML journey.
+
+Every month teaches something. This month taught me the importance of consistency, even if the progress is small.
 
 ---
 
