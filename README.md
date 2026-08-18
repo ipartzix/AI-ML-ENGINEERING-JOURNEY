@@ -451,6 +451,36 @@ Now that my semester exams are over, I'm looking forward to getting back to buil
 Every month teaches something. This month taught me the importance of consistency, even if the progress is small.
 
 ---
+## July Progress — From Classical ML to Deep Learning
+
+
+
+July was my **most project-focused month so far** in my AI/ML journey. This month, I continued strengthening my Classical Machine Learning fundamentals while taking a major step into **Deep Learning and Computer Vision**.
+
+###  What I Focused On
+
+* Revised **Logistic Regression** and strengthened my understanding of classification.
+* Learned **Artificial Neural Networks (ANNs)**, including neurons, hidden layers, activation functions, forward propagation, and backpropagation.
+* Explored **Convolutional Neural Networks (CNNs)** and how they are used for image classification.
+* Built my first end-to-end **Crop Disease Classification System**  using plant leaf images.
+* Used **PyTorch** for training and evaluation and achieved **95.47% test accuracy**.
+* Gained hands-on experience with the complete ML workflow — **data preprocessing, dataset splitting, training, validation, testing, and evaluation**.
+
+###  Key Takeaways
+
+This month helped me understand that strong **Classical ML fundamentals provide a solid foundation for Deep Learning**. I also realized that practical implementation plays a huge role in turning theoretical knowledge into real-world skills.
+
+July was an important milestone in my journey as I moved from **learning ML algorithms to building and applying them in a real-world Computer Vision project**.
+
+###  Next Steps
+
+My focus for the coming months will be on **Transfer Learning, advanced CNN architectures, project deployment, and deeper Machine Learning & Deep Learning concepts**, while continuing to improve my DSA and problem-solving skills.
+
+Excited to keep learning, building, and making consistent progress. 🚀
+
+#AI #MachineLearning #DeepLearning #ComputerVision #PyTorch #Python #AIJourney #LearningInPublic
+
+---
 
 ## Current Status
 
