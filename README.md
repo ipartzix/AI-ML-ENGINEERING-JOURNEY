@@ -356,6 +356,51 @@ Focus:
 - Continued using **Jupyter Notebook** for experiments and structured learning tracking
 
 ---
+## May Progress Update | AI/ML Engineering Journey
+
+May was focused on strengthening my foundations in both Database Management Systems, Machine Learning, and Data Structures & Algorithms (DSA). My goal this month was to build a deeper understanding of the fundamentals that power modern software and AI systems.
+
+### Focused On:
+
+• Learned MySQL fundamentals and database operations
+→ Creating tables, managing data, writing queries, and understanding relational databases
+
+• Explored important SQL concepts
+→ Constraints, Primary Keys, Foreign Keys, Joins, and Data Manipulation
+
+• Studied core Supervised Machine Learning algorithms
+→ Understanding how machine learning models learn from labeled data
+
+• Learned Linear Regression in depth
+→ Understanding the relationship between features and predictions
+
+• Explored Multiple Linear Regression
+→ Working with multiple input variables for better predictions
+
+• Studied Lasso Regression (L1 Regularization)
+→ Feature selection and reducing model complexity
+
+• Learned Ridge Regression (L2 Regularization)
+→ Preventing overfitting and improving model generalization
+
+• Explored Elastic Net Regression
+→ Combining the benefits of both Lasso and Ridge regularization
+
+• Continued DSA practice in Python
+→ Solved problems involving Arrays, Strings, Searching, Sorting, and basic algorithmic thinking
+
+• Strengthened problem-solving skills
+→ Focused on writing optimized solutions and improving coding consistency
+
+### Key Takeaways:
+
+- Strong fundamentals in databases are essential for handling real-world data
+- Regression algorithms provide the foundation for many machine learning models
+- Regularization techniques help create more reliable and robust models
+- DSA improves logical thinking and problem-solving ability
+- Consistency matters more than speed when building technical skills
+
+---
 
 ### Key Takeaways
 
