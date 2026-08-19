@@ -87,4 +87,6 @@ Gaussian Naive Bayes assumes that the features follow a Gaussian (normal) distri
 
 ### Best Performing Model
 
-**Bernoulli Naive Bayes — 81.94%**
+```
+Bernoulli Naive Bayes — 81.94%
+```
