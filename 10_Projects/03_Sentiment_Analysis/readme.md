@@ -48,3 +48,43 @@ Predictions
 Accuracy Evaluation
         ↓
 Model Comparison
+
+```
+
+## Naive Bayes Models
+
+### 1. Bernoulli Naive Bayes
+
+Bernoulli Naive Bayes is designed for binary features, where each feature represents whether a word is present or absent in a review.
+
+**Accuracy: 81.94%**
+
+---
+
+### 2. Multinomial Naive Bayes
+
+Multinomial Naive Bayes is commonly used for text classification and works well with word-count-based features.
+
+**Accuracy: 81.41%**
+
+---
+
+### 3. Gaussian Naive Bayes
+
+Gaussian Naive Bayes assumes that the features follow a Gaussian (normal) distribution.
+
+**Accuracy: 78.98%**
+
+---
+
+## Accuracy Comparison
+
+| Naive Bayes Algorithm | Accuracy |
+|---|---:|
+| **Bernoulli Naive Bayes** | **81.94%** |
+| **Multinomial Naive Bayes** | **81.41%** |
+| **Gaussian Naive Bayes** | **78.98%** |
+
+### Best Performing Model
+
+**Bernoulli Naive Bayes — 81.94%**
