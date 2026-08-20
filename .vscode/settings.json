@@ -1,12 +1,11 @@
 {
-  "codeQL.githubDatabase.download": "never",
-  "sarif-viewer.connectToGithubCodeScanning": "off",
+  "python.defaultInterpreterPath": "/home/ipartzix/miniconda3/envs/AI-ML-Env/bin/python",
   "code-runner.executorMap": {
-    "python": "C:\\Users\\D\\anaconda3\\envs\\aiml_engineering\\python.exe -u"
+    "python": "cd $dir && /home/ipartzix/miniconda3/envs/AI-ML-Env/bin/python -u $fileName"
   },
-  "cSpell.words": [
-    "sarif"
-  ],
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.showExecutionMessage": false,
   "python-envs.defaultEnvManager": "ms-python.python:conda",
   "python-envs.defaultPackageManager": "ms-python.python:conda"
 }
