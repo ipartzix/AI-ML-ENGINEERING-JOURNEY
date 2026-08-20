@@ -1,7 +1,9 @@
 {
-    "python.defaultInterpreterPath": "C:\\Users\\ipartzix\\anaconda3\\envs\\AIML-Engineering_env\\python.exe",
+    "python.defaultInterpreterPath": "/home/ipartzix/miniconda3/envs/AI-ML-Env/bin/python",
+
     "code-runner.executorMap": {
-        "python": "C:\\Users\\ipartzix\\anaconda3\\envs\\AIML-Engineering_env\\python.exe -u"
+        "python": "/home/ipartzix/miniconda3/envs/AI-ML-Env/bin/python -u"
     },
+
     "code-runner.runInTerminal": true
 }
