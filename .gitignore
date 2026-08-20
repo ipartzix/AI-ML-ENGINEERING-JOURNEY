@@ -8,3 +8,5 @@ dataset/digit-recognizer-test.csv
 
 # Ignore VS Code settings
 .vscode/settings.json
+
+.iml
