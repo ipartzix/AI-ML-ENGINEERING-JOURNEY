@@ -1,3 +1,4 @@
+```
 ai-ml-engineering-journey/
 │
 ├── 00_Orientation/
@@ -275,3 +276,5 @@ ai-ml-engineering-journey/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+
+```
