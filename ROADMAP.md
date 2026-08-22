@@ -61,21 +61,15 @@ ai-ml-engineering-journey/
 |   |   |       ├── Multinomial_Naive_Bayes/
 |   |   |       └── Bernoulli_Naive_Bayes/
 │   │   │
-│   │   ├── 3_Probabilistic_Models/
-|   |   |       ├── Probability_Fundamentals/
-|   |   |       ├── Bayes_Theorem/
-|   |   |       ├── Bayesian_Models/
-|   |   |       └── Probability_Distributions/
-|   |   |
-│   │   ├── 04_Tree_Based/
+│   │   ├── 03_Tree_Based/
 │   │   │   ├── Decision_Tree/
 │   │   │   ├── Random_Forest/
 │   │   │
-│   │   ├── 05_SVM/
+│   │   ├── 04_SVM/
 │   │   │   ├── Linear_SVM/
 │   │   │   ├── Kernel_SVM/
 │   │   │
-│   │   ├── 06_Ensemble_Basics/
+│   │   ├── 05_Ensemble_Basics/
 │   │       ├── Bagging/
 │   │       ├── Voting/
 │
