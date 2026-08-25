@@ -56,14 +56,13 @@ ai-ml-engineering-journey/
 │   │   ├── 02_Classification/
 │   │   │   ├── Logistic_Regression/
 │   │   │   ├── KNN/
-│   │   │   Naive_Bayes/
-|   |   |       ├── Gaussian_Naive_Bayes/
-|   |   |       ├── Multinomial_Naive_Bayes/
-|   |   |       └── Bernoulli_Naive_Bayes/
+│   │   │   ├── Naive_Bayes/
+│   │   │   │   ├── Gaussian_Naive_Bayes/
+│   │   │   │   ├── Multinomial_Naive_Bayes/
+│   │   │   │   └── Bernoulli_Naive_Bayes/
 │   │   │
 │   │   ├── 03_Tree_Based/
 │   │   │   ├── Decision_Tree/
-│   │   │   ├── Random_Forest/
 │   │   │
 │   │   ├── 04_SVM/
 │   │   │   ├── Linear_SVM/
@@ -71,8 +70,9 @@ ai-ml-engineering-journey/
 │   │   │
 │   │   ├── 05_Ensemble_Basics/
 │   │       ├── Bagging/
+│   │       │   └── Random_Forest/
 │   │       ├── Voting/
-│
+│   |
 │   ├── 02_Unsupervised_Learning/
 │   │   ├── 01_Clustering/
 │   │   │   ├── KMeans/
@@ -87,7 +87,7 @@ ai-ml-engineering-journey/
 │   │   ├── 03_Anomaly_Detection/
 │   │       ├── Isolation_Forest/
 │   │       ├── OneClass_SVM/
-│
+│   |
 │   ├── 03_Reinforcement_Learning/
 │       ├── Fundamentals/
 │       │   ├── Agent_Environment/
@@ -170,7 +170,7 @@ ai-ml-engineering-journey/
 │   │   ├── Bias_Variance_Decision.md
 │   │   ├── Metric_Selection.md
 │   │   ├── Statistical_Testing.md
-│
+│   │
 │   ├── Scaling_ML/
 │       ├── Large_Data_Training.md
 │       ├── Online_Learning.md
