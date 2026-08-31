@@ -44,97 +44,91 @@ ai-ml-engineering-journey/
 │ # Purpose: Classical ML with theory + from-scratch implementations.
 │ ├── 01_Machine_Learning_Fundamentals/
 │ ├── 02_Feature_Engineering/
-│ ├── 03_Scikit_Learn/ 
+│ ├── 03_Scikit_Learn/
 | ├── 04_Core_Algorithms/
 │   ├── 01_Supervised_Learning/
 │   │   ├── 01_Linear_Models/
 │   │   │   ├── Linear_Regression/
 │   │   │   ├── Ridge_Regression/
 │   │   │   ├── Lasso_Regression/
-│   │   │   ├── ElasticNet/
+│   │   │   └── ElasticNet/
 │   │   │
 │   │   ├── 02_Classification/
 │   │   │   ├── Logistic_Regression/
 │   │   │   ├── KNN/
-│   │   │   ├── Naive_Bayes/
-│   │   │   │   ├── Gaussian_Naive_Bayes/
-│   │   │   │   ├── Multinomial_Naive_Bayes/
-│   │   │   │   └── Bernoulli_Naive_Bayes/
+│   │   │   └── Naive_Bayes/
+│   │   │       ├── Gaussian_Naive_Bayes/
+│   │   │       ├── Multinomial_Naive_Bayes/
+│   │   │       └── Bernoulli_Naive_Bayes/
 │   │   │
 │   │   ├── 03_Tree_Based/
-│   │   │   ├── Decision_Tree/
+│   │   │   └── Decision_Tree/
 │   │   │
 │   │   ├── 04_SVM/
 │   │   │   ├── Linear_SVM/
 │   │   │   ├── Kernel_SVM/
+│   │   │   └── Advanced/
+│   │   │       ├── Soft_Margin/
+│   │   │       └── Kernel_Tricks/
 │   │   │
-│   │   ├── 05_Ensemble_Basics/
+│   │   └── 05_Ensemble_Learning/
 │   │       ├── Bagging/
 │   │       │   └── Random_Forest/
 │   │       ├── Voting/
-│   |
+│   │       └── Boosting/
+│   │           ├── AdaBoost/
+│   │           ├── Gradient_Boosting/
+│   │           ├── XGBoost/
+│   │           ├── LightGBM/
+│   │           └── CatBoost/
+│   │
 │   ├── 02_Unsupervised_Learning/
 │   │   ├── 01_Clustering/
 │   │   │   ├── KMeans/
 │   │   │   ├── Hierarchical/
-│   │   │   ├── DBSCAN/
+│   │   │   └── DBSCAN/
 │   │   │
 │   │   ├── 02_Dimensionality_Reduction/
 │   │   │   ├── PCA/
 │   │   │   ├── tSNE/
 │   │   │   ├── UMAP/
+│   │   │   └── Advanced/
+│   │   │       ├── Autoencoders/
+│   │   │       └── Manifold_Learning/
 │   │   │
-│   │   ├── 03_Anomaly_Detection/
+│   │   └── 03_Anomaly_Detection/
 │   │       ├── Isolation_Forest/
 │   │       ├── OneClass_SVM/
-│   |
-│   ├── 03_Reinforcement_Learning/
+│   │       ├── LOF/
+│   │       └── Autoencoder_Anomaly/
+│   │
+│   └── 03_Reinforcement_Learning/
 │       ├── Fundamentals/
 │       │   ├── Agent_Environment/
 │       │   ├── Reward_System/
-│       │   ├── Markov_Decision_Process/
+│       │   └── Markov_Decision_Process/
 │       │
 │       ├── Value_Based/
 │       │   ├── Q_Learning/
-│       │   ├── Deep_Q_Network/
+│       │   └── Deep_Q_Network/
 │       │
 │       ├── Policy_Based/
 │       │   ├── Policy_Gradient/
-│       │   ├── REINFORCE/
+│       │   └── REINFORCE/
 │       │
-│       ├── Actor_Critic/
+│       └── Actor_Critic/
 │           ├── A2C/
-│           ├── PPO/
+│           └── PPO/
 │
-├── 05_Advanced_ML_Algorithms/
-│
-│   ├── Boosting/
-│   │   ├── AdaBoost/
-│   │   ├── Gradient_Boosting/
-│   │   ├── XGBoost/
-│   │   ├── LightGBM/
-│   │   ├── CatBoost/
-│
-│   ├── Advanced_SVM/
-│   │   ├── Soft_Margin/
-│   │   ├── Kernel_Tricks/
-│
-│   ├── Probabilistic_Advanced/
+├── 05_Advanced_ML_Topics/
+│   ├── Probabilistic_Models/
 │   │   ├── Hidden_Markov_Model/
-│   │   ├── Bayesian_Network/
-│
-│   ├── Advanced_Dimensionality_Reduction/
-│   │   ├── Autoencoders/
-│   │   ├── Manifold_Learning/
-│
-│   ├── Anomaly_Detection/
-│   │   ├── LOF/
-│   │   ├── Autoencoder_Anomaly/
-│
-│   ├── Recommendation_Systems/
+│   │   └── Bayesian_Network/
+│   │
+│   └── Recommendation_Systems/
 │       ├── Collaborative_Filtering/
 │       ├── Content_Based/
-│       ├── Matrix_Factorization/
+│       └── Matrix_Factorization/
 │
 ├── 06_Advanced_ML_Concepts/
 │
