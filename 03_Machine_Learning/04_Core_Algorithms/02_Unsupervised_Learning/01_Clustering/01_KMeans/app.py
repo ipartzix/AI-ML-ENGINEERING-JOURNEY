@@ -1,24 +1,48 @@
-from sklearn.datasets import make_blobs
 import matplotlib.pyplot as plt
-from kmeans import KMeans
 import pandas as pd
+from kmeans import KMeans
 
-#centroids = [(-5,-5),(5,5),(-2.5,2.5),(2.5,-2.5)]
-#cluster_std = [1,1,1,1]
-
-#X,y = make_blobs(n_samples=100,cluster_std=cluster_std,centers=centroids,n_features=2,random_state=2)
-
-#plt.scatter(X[:,0],X[:,1])
-
+# Load dataset
 df = pd.read_csv('https://raw.githubusercontent.com/campusx-official/100-days-of-machine-learning/refs/heads/main/kmeans/student_clustering.csv')
+X = df.iloc[:, :].values
 
-X = df.iloc[:,:].values
+# 1. Run Elbow Method to find optimal K
+wcss = []
+k_range = range(1, 11)
 
-km = KMeans(n_clusters=4,max_iter=500)
+for k in k_range:
+    km = KMeans(n_clusters=k, max_iter=500)
+    km.fit_predict(X)
+    wcss.append(km.inertia_)
+
+# Plot Elbow Curve
+plt.figure(figsize=(6, 4))
+plt.plot(k_range, wcss, marker='o')
+plt.title('Elbow Method For Optimal k')
+plt.xlabel('Number of Clusters (k)')
+plt.ylabel('WCSS / Inertia')
+plt.grid(True)
+plt.show()
+
+# 2. Fit K-Means with optimal K (e.g., k = 4 based on the elbow point)
+optimal_k = 4
+km = KMeans(n_clusters=optimal_k, max_iter=500)
 y_means = km.fit_predict(X)
 
-plt.scatter(X[y_means == 0,0],X[y_means == 0,1],color='red')
-plt.scatter(X[y_means == 1,0],X[y_means == 1,1],color='blue')
-plt.scatter(X[y_means == 2,0],X[y_means == 2,1],color='green')
-plt.scatter(X[y_means == 3,0],X[y_means == 3,1],color='yellow')
+# 3. Dynamically plot all clusters
+plt.figure(figsize=(8, 5))
+colors = ['red', 'blue', 'green', 'yellow', 'purple', 'orange', 'cyan', 'magenta', 'lime', 'pink']
+
+for cluster_id in range(optimal_k):
+    plt.scatter(
+        X[y_means == cluster_id, 0], 
+        X[y_means == cluster_id, 1], 
+        color=colors[cluster_id % len(colors)], 
+        label=f'Cluster {cluster_id}'
+    )
+
+plt.xlabel('Feature 1')
+plt.ylabel('Feature 2')
+plt.title(f'Student Clusters (K={optimal_k})')
+plt.legend()
 plt.show()
