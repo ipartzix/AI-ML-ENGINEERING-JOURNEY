@@ -214,85 +214,74 @@ ai-ml-engineering-journey/
 |
 ├── 04_Deep_Learning/
 │
-├── 00_Deep_Learning_Fundamentals/
+├── 00_Fundamentals/
 │   ├── 01_Introduction_to_Deep_Learning/
 │   ├── 02_Types_of_Neural_Networks/
 │   └── 03_Tensors/
 │
 ├── 01_Neural_Networks/
 │   ├── 01_Perceptron/
-│   ├── 02_Perceptron_Loss/
-│   ├── 03_MLP/
-│   ├── 04_Forward_Propagation/
-│   ├── 05_Activation_Functions/
-│   ├── 06_Loss_Functions/
-│   └── 07_Backpropagation/
+│   ├── 02_MLP/
+│   ├── 03_Forward_Propagation/
+│   ├── 04_Activation_Functions/
+│   ├── 05_Loss_Functions/
+│   └── 06_Backpropagation/
 │
-├── 02_Neural_Network_Training/
+├── 02_Training_Neural_Networks/
 │   ├── 01_Gradient_Descent/
 │   ├── 02_Optimizers/
-│   ├── 03_Momentum/
-│   ├── 04_RMSProp/
-│   ├── 05_Adam/
-│   ├── 06_Weight_Initialization/
-│   ├── 07_Vanishing_Gradient/
-│   ├── 08_Exploding_Gradient/
-│   ├── 09_Batch_Normalization/
-│   └── 10_Dropout/
+│   │   ├── SGD/
+│   │   ├── Momentum/
+│   │   ├── RMSProp/
+│   │   └── Adam/
+│   ├── 03_Weight_Initialization/
+│   ├── 04_Vanishing_Exploding_Gradients/
+│   ├── 05_Batch_Normalization/
+│   └── 06_Dropout/
 │
 ├── 03_ANN_Practical/
-│   ├── 01_Binary_Classification/
-│   ├── 02_Multiclass_Classification/
-│   ├── 03_Regression/
-│   └── 04_Hyperparameter_Tuning/
+│   ├── 01_Classification/
+│   ├── 02_Regression/
+│   └── 03_Hyperparameter_Tuning/
 │
 ├── 04_CNN/
-│   ├── 01_CNN_Fundamentals/
+│   ├── 01_Fundamentals/
 │   ├── 02_Convolution/
 │   ├── 03_Padding_Stride/
 │   ├── 04_Pooling/
-│   ├── 05_CNN_Architecture/
-│   ├── 06_CNN_Forward_Propagation/
-│   ├── 07_CNN_Backpropagation/
-│   ├── 08_CNN_Visualization/
-│   └── 09_CNN_Projects/
+│   ├── 05_Architectures/
+│   ├── 06_Visualization/
+│   └── 07_Projects/
 │
 ├── 05_RNN/
 │   ├── 01_Sequence_Data/
 │   ├── 02_RNN_Fundamentals/
-│   ├── 03_RNN_Forward_Propagation/
-│   ├── 04_RNN_Backpropagation/
-│   ├── 05_Vanishing_Gradient/
-│   └── 06_RNN_Projects/
+│   ├── 03_BPTT/
+│   └── 04_Projects/
 │
 ├── 06_LSTM_GRU/
 │   ├── 01_LSTM/
-│   ├── 02_LSTM_Cell/
-│   ├── 03_LSTM_Training/
-│   ├── 04_GRU/
-│   └── 05_Sequence_Projects/
+│   ├── 02_GRU/
+│   └── 03_Projects/
 │
 ├── 07_Encoder_Decoder/
 │   ├── 01_Seq2Seq/
-│   ├── 02_Encoder/
-│   ├── 03_Decoder/
-│   ├── 04_Attention/
-│   └── 05_Seq2Seq_Projects/
+│   ├── 02_Attention/
+│   └── 03_Projects/
 │
 ├── 08_Autoencoders/
 │   ├── 01_Autoencoder/
 │   ├── 02_Denoising_Autoencoder/
-│   ├── 03_Variational_Autoencoder/
+│   ├── 03_VAE/
 │   └── 04_Projects/
 │
-├── 09_Deep_Learning_Framework/
-│   └── PyTorch/
-│       ├── 01_Tensors/
-│       ├── 02_Datasets_DataLoaders/
-│       ├── 03_NN_Module/
-│       ├── 04_Training_Loop/
-│       ├── 05_Model_Saving/
-│       └── 06_GPU_Training/
+└── 09_PyTorch/
+    ├── 01_Tensors/
+    ├── 02_Datasets_DataLoaders/
+    ├── 03_NN_Module/
+    ├── 04_Training_Loop/
+    ├── 05_Model_Saving/
+    └── 06_GPU_Training/
 |
 │
 ├── 05_Computer_Vision/
