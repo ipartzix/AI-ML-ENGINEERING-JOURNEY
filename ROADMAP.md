@@ -213,76 +213,88 @@ ai-ml-engineering-journey/
 │       ├── ElasticNet.md
 |
 ├── 04_Deep_Learning/
+│   # Purpose: Build neural-network foundations, understand deep learning architectures,
+│   # and implement them using PyTorch.
 │
-├── 00_Fundamentals/
-│   ├── 01_Introduction_to_Deep_Learning/
-│   ├── 02_Types_of_Neural_Networks/
-│   └── 03_Tensors/
-│
-├── 01_Neural_Networks/
-│   ├── 01_Perceptron/
-│   ├── 02_MLP/
-│   ├── 03_Forward_Propagation/
-│   ├── 04_Activation_Functions/
-│   ├── 05_Loss_Functions/
-│   └── 06_Backpropagation/
-│
-├── 02_Training_Neural_Networks/
-│   ├── 01_Gradient_Descent/
-│   ├── 02_Optimizers/
-│   │   ├── SGD/
-│   │   ├── Momentum/
-│   │   ├── RMSProp/
-│   │   └── Adam/
-│   ├── 03_Weight_Initialization/
-│   ├── 04_Vanishing_Exploding_Gradients/
-│   ├── 05_Batch_Normalization/
-│   └── 06_Dropout/
-│
-├── 03_ANN_Practical/
-│   ├── 01_Classification/
-│   ├── 02_Regression/
-│   └── 03_Hyperparameter_Tuning/
-│
-├── 04_CNN/
-│   ├── 01_Fundamentals/
-│   ├── 02_Convolution/
-│   ├── 03_Padding_Stride/
-│   ├── 04_Pooling/
-│   ├── 05_Architectures/
-│   ├── 06_Visualization/
-│   └── 07_Projects/
-│
-├── 05_RNN/
-│   ├── 01_Sequence_Data/
-│   ├── 02_RNN_Fundamentals/
-│   ├── 03_BPTT/
-│   └── 04_Projects/
-│
-├── 06_LSTM_GRU/
-│   ├── 01_LSTM/
-│   ├── 02_GRU/
-│   └── 03_Projects/
-│
-├── 07_Encoder_Decoder/
-│   ├── 01_Seq2Seq/
-│   ├── 02_Attention/
-│   └── 03_Projects/
-│
-├── 08_Autoencoders/
-│   ├── 01_Autoencoder/
-│   ├── 02_Denoising_Autoencoder/
-│   ├── 03_VAE/
-│   └── 04_Projects/
-│
-└── 09_PyTorch/
-    ├── 01_Tensors/
-    ├── 02_Datasets_DataLoaders/
-    ├── 03_NN_Module/
-    ├── 04_Training_Loop/
-    ├── 05_Model_Saving/
-    └── 06_GPU_Training/
-|
+│   ├── 00_Fundamentals/
+│   │   ├── 01_Introduction/
+│   │   ├── 02_Deep_Learning_vs_ML/
+│   │   ├── 03_Tensors/
+│   │   └── 04_Neural_Network_Overview/
+│   │
+│   ├── 01_Neural_Network_Foundations/
+│   │   ├── 01_Perceptron/
+│   │   ├── 02_MLP/
+│   │   ├── 03_Forward_Propagation/
+│   │   ├── 04_Activation_Functions/
+│   │   ├── 05_Loss_Functions/
+│   │   └── 06_Backpropagation/
+│   │
+│   ├── 02_Neural_Network_Training/
+│   │   ├── 01_Gradient_Descent/
+│   │   ├── 02_Optimizers/
+│   │   │   ├── SGD/
+│   │   │   ├── Momentum/
+│   │   │   ├── RMSProp/
+│   │   │   └── Adam/
+│   │   ├── 03_Weight_Initialization/
+│   │   ├── 04_Vanishing_Exploding_Gradients/
+│   │   ├── 05_Batch_Normalization/
+│   │   ├── 06_Dropout/
+│   │   └── 07_Hyperparameter_Tuning/
+│   │
+│   ├── 03_ANN_Practical/
+│   │   ├── 01_Classification/
+│   │   ├── 02_Regression/
+│   │   └── 03_Projects/
+│   │
+│   ├── 04_CNN/
+│   │   ├── 01_CNN_Fundamentals/
+│   │   ├── 02_Convolution/
+│   │   ├── 03_Padding_Stride/
+│   │   ├── 04_Pooling/
+│   │   ├── 05_CNN_Architecture/
+│   │   ├── 06_Regularization_Augmentation/
+│   │   ├── 07_Transfer_Learning/
+│   │   ├── 08_Visualization/
+│   │   └── 09_Projects/
+│   │
+│   ├── 05_RNN/
+│   │   ├── 01_Sequence_Data/
+│   │   ├── 02_RNN_Fundamentals/
+│   │   ├── 03_Forward_Backward_Pass/
+│   │   ├── 04_BPTT/
+│   │   ├── 05_Vanishing_Gradient/
+│   │   └── 06_Projects/
+│   │
+│   ├── 06_LSTM_GRU/
+│   │   ├── 01_LSTM/
+│   │   ├── 02_GRU/
+│   │   ├── 03_LSTM_vs_GRU/
+│   │   └── 04_Projects/
+│   │
+│   ├── 07_Encoder_Decoder/
+│   │   ├── 01_Seq2Seq/
+│   │   ├── 02_Encoder_Decoder_Architecture/
+│   │   ├── 03_Attention/
+│   │   └── 04_Projects/
+│   │
+│   ├── 08_Autoencoders/
+│   │   ├── 01_Autoencoder/
+│   │   ├── 02_Denoising_Autoencoder/
+│   │   ├── 03_Variational_Autoencoder/
+│   │   └── 04_Projects/
+│   │
+│   └── 09_PyTorch/
+│       ├── 01_Tensors/
+│       ├── 02_Autograd/
+│       ├── 03_Datasets_DataLoaders/
+│       ├── 04_NN_Module/
+│       ├── 05_Training_Loop/
+│       ├── 06_Optimizers_Losses/
+│       ├── 07_Model_Saving_Loading/
+│       ├── 08_GPU_Training/
+│       └── 09_Inference/
 │
 ├── 05_Computer_Vision/
 │ # Purpose: Visual data understanding and representation learning.
