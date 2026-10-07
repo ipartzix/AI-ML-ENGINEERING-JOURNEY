@@ -214,7 +214,7 @@ ai-ml-engineering-journey/
 |
 ├── 04_Deep_Learning/
 │   # Purpose: Build neural-network foundations, understand deep learning architectures,
-│   # and implement them using PyTorch.
+│   # and implement them using PyTorch/TensorFlow and Keras.
 │
 │   ├── 00_Fundamentals/
 │   │   ├── 01_Introduction/
