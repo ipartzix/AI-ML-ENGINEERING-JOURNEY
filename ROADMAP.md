@@ -226,9 +226,9 @@ ai-ml-engineering-journey/
 │   │   ├── 01_Perceptron/
 │   │   ├── 02_MLP/
 │   │   ├── 03_Forward_Propagation/
-│   │   ├── 04_Activation_Functions/
+│   │   ├── 04_Backpropagation/
 │   │   ├── 05_Loss_Functions/
-│   │   └── 06_Backpropagation/
+│   │   └── 06_Activation_Functions/
 │   │
 │   ├── 02_Neural_Network_Training/
 │   │   ├── 01_Gradient_Descent/
