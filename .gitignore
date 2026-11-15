@@ -6,7 +6,9 @@ __pycache__/
 # Ignore CSV dataset
 dataset/digit-recognizer-test.csv
 
-# Ignore VS Code settings
-.vscode/settings.json
+# IDE settings
+.idea/
+.vscode/
 
-.iml
+# IntelliJ IDEA project files
+*.iml
